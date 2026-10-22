@@ -31,6 +31,9 @@ GrowBuddy in Danish, and room for more languages.
   language is one file. `GET /notification-languages` lists them, and the
   alert settings carry `language`.
 - VPD alerts now say "VPD" instead of "vpd".
+- **Installer:** configs written before `ntfy.public_url` existed get it added
+  to `[ntfy]` (with the Pi's name) instead of silently using the built-in
+  default, which would make the server reject the app's push endpoint.
 
 ## 2.3.0 - 2026-10-22
 

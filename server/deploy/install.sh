@@ -133,8 +133,10 @@ if [[ ! -f $CONF ]]; then
     phone_pass=$(head -c 12 /dev/urandom | base64 | tr -d '/+=')
     add_ntfy_user phone read-only "$phone_pass"
     (umask 077 && echo "$phone_pass" > "$PHONE_CREDS")
-else
+elif grep -q '^public_url = ' "$CONF"; then
     sed -i "s|^public_url = .*|public_url = \"http://$host:2586\"|" "$CONF"
+else  # configs written before public_url existed (2.0.x): add it to [ntfy]
+    sed -i "/^\[ntfy\]/a public_url = \"http://$host:2586\"" "$CONF"
 fi
 # App push (UnifiedPush): alerts go to private up… topics that the ntfy app hands to GrowBuddy
 sudo -u ntfy ntfy access growbuddy 'up*' write-only > /dev/null
