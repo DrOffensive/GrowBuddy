@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 0.1.6 GrowBuddy mark (phone + leaf), inset into the adaptive-icon safe zone. -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:inset="24%">
+    <bitmap android:src="@drawable/logo_glyph" android:tint="#FFFFFF" android:gravity="center" />
+</inset>

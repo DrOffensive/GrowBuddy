@@ -1,0 +1,381 @@
+{
+ "schedules": [
+  {
+   "profileId": "biobizz",
+   "displayName": "BioBizz (Coco)",
+   "substrate": "coco",
+   "weekEntries": [
+    {
+     "week": 1,
+     "phase": "Veg",
+     "nutrients": {
+      "BioGrow": 1.0,
+      "BioBloom": 0.0,
+      "TopMax": 0.0,
+      "BioHeaven": 0.0,
+      "CalMag": 1.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.4,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 60,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Establish roots. Light feeding. CalMag from day one in coco."
+    },
+    {
+     "week": 2,
+     "phase": "Veg",
+     "nutrients": {
+      "BioGrow": 2.0,
+      "BioBloom": 0.0,
+      "TopMax": 0.0,
+      "BioHeaven": 1.0,
+      "CalMag": 1.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.4,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 55,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Increase BioGrow. Introduce BioHeaven."
+    },
+    {
+     "week": 3,
+     "phase": "Veg",
+     "nutrients": {
+      "BioGrow": 3.0,
+      "BioBloom": 0.0,
+      "TopMax": 0.0,
+      "BioHeaven": 1.0,
+      "CalMag": 1.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.4,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.4,
+      "max": 1.8,
+      "target": 1.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Full veg feed. LST if not already done."
+    },
+    {
+     "week": 4,
+     "phase": "Veg",
+     "nutrients": {
+      "BioGrow": 3.0,
+      "BioBloom": 1.0,
+      "TopMax": 0.0,
+      "BioHeaven": 1.0,
+      "CalMag": 1.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.4,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.4,
+      "max": 1.8,
+      "target": 1.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Introduce BioBloom early. Autoflowers may begin pre-flower."
+    },
+    {
+     "week": 5,
+     "phase": "Flower",
+     "nutrients": {
+      "BioGrow": 2.0,
+      "BioBloom": 2.0,
+      "TopMax": 1.0,
+      "BioHeaven": 1.0,
+      "CalMag": 1.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.4,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.0,
+      "target": 1.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 18
+     },
+     "notes": "Transition. Taper BioGrow, increase BioBloom. Introduce TopMax."
+    },
+    {
+     "week": 6,
+     "phase": "Flower",
+     "nutrients": {
+      "BioGrow": 1.0,
+      "BioBloom": 3.0,
+      "TopMax": 1.0,
+      "BioHeaven": 1.0,
+      "CalMag": 1.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.4,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.2,
+      "target": 1.9
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 18
+     },
+     "notes": "Full flower. Watch humidity drop to prevent bud rot."
+    },
+    {
+     "week": 7,
+     "phase": "Flower",
+     "nutrients": {
+      "BioGrow": 0.0,
+      "BioBloom": 3.0,
+      "TopMax": 1.5,
+      "BioHeaven": 1.0,
+      "CalMag": 1.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.4,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.2,
+      "target": 1.9
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 18
+     },
+     "notes": "Stop BioGrow. Bud bulk phase."
+    },
+    {
+     "week": 8,
+     "phase": "Flower",
+     "nutrients": {
+      "BioGrow": 0.0,
+      "BioBloom": 3.0,
+      "TopMax": 2.0,
+      "BioHeaven": 1.0,
+      "CalMag": 0.5
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.4,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.4,
+      "max": 2.0,
+      "target": 1.7
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 18
+     },
+     "notes": "Taper CalMag. Check trichomes. Begin flush prep."
+    },
+    {
+     "week": 9,
+     "phase": "Flush",
+     "nutrients": {
+      "BioGrow": 0.0,
+      "BioBloom": 0.0,
+      "TopMax": 0.0,
+      "BioHeaven": 0.0,
+      "CalMag": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 0.4,
+      "max": 0.8,
+      "target": 0.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 18
+     },
+     "notes": "Plain pH'd water only. EC of runoff should approach input EC."
+    },
+    {
+     "week": 10,
+     "phase": "Flush",
+     "nutrients": {
+      "BioGrow": 0.0,
+      "BioBloom": 0.0,
+      "TopMax": 0.0,
+      "BioHeaven": 0.0,
+      "CalMag": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 0.4,
+      "max": 0.6,
+      "target": 0.5
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 18
+     },
+     "notes": "Final flush. Harvest when trichomes are where you want them."
+    }
+   ]
+  }
+ ]
+}

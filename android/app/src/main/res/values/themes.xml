@@ -1,0 +1,29 @@
+<resources>
+    <!-- Window background only; all UI colours come from the Compose theme. -->
+    <style name="Theme.GrowBuddy" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Home widget text over the wallpaper: a shadow keeps it readable on light backgrounds. -->
+    <style name="WidgetLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:shadowColor">#CC000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+
+    <style name="WidgetArrow" parent="WidgetLabel">
+        <item name="android:layout_width">28dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#FFF2F5F1</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+</resources>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 12+ system splash icon: the phone+leaf mark in brand green on white, inset to fit the circular mask. -->
+<inset xmlns:android="http://schemas.android.com/apk/res/android" android:inset="20%">
+    <bitmap android:src="@drawable/logo_glyph" android:tint="#2E6B3A" android:gravity="center" />
+</inset>

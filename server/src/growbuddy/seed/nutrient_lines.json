@@ -1,0 +1,146 @@
+{
+ "lines": [
+  {
+   "brand": "Biobizz",
+   "description": "A premier line of 100% certified organic nutrients, stimulants, and additives designed for natural and sustainable plant cultivation.",
+   "products": [
+    {
+     "name": "Bio-Grow",
+     "description": "A complete liquid growth fertilizer made from 100% organic Dutch sugar beet extract that enriches soil microflora and supports vegetative development.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Bio-Bloom",
+     "description": "An independent liquid organic fertilizer optimized for the flowering and fruiting phases, packed with phosphorus, potassium, and trace elements.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Fish-Mix",
+     "description": "An organic fertilizer blend of marine fish emulsion and beet vinasse that conditions soil, boosts microbial growth, and accelerates early vegetative growth.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Top-Max",
+     "description": "An organic flowering enhancer containing humic and fulvic acids that increases flower cluster size, improves nutrient uptake, and enhances crop sweetness.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Root-Juice",
+     "description": "A root stimulant combining premium humic acids and cold-pressed seaweed to promote explosive root growth and maximize early nutrient absorption.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Alg-A-Mic",
+     "description": "A revitalizing stress-relief additive derived from high-grade seaweed concentrate that helps crops recover from environmental changes, deficiencies, or pests.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Bio-Heaven",
+     "description": "A highly concentrated plant energy booster containing hydrolyzed proteins and amino acids that enhances metabolism and eliminates toxins.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Acti-Vera",
+     "description": "A 100% vegan botanical activator derived from aloe vera that protects the plant's immune system, activates metabolism, and optimizes nutrient uptake.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Calmag",
+     "description": "A specialized calcium and magnesium supplement designed to correct and prevent deficiencies in soft water, coco, and hydroponic systems.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Bio-pH-",
+     "description": "An aqueous organic pH down regulator formulated with citric acid to naturally adjust substrate acidity without disrupting beneficial soil microbes.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Bio-pH+",
+     "description": "A humic acid-based organic pH up regulator crafted to increase pH levels safely while preserving the vitality of the substrate ecosystem.",
+     "unit": "ml/L"
+    }
+   ]
+  },
+  {
+   "brand": "CANNA",
+   "description": "A global leader in high-performance plant nutrition, specialized substrate formulations, and additives engineered for soil, coco coir, and hydroponic cultivation systems.",
+   "products": [
+    {
+     "name": "Terra Vega",
+     "description": "A complete base nutrient formulated for soil-based cultivation during the vegetative phase to promote strong shoot development and vigorous root growth.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Terra Flores",
+     "description": "A specialized base nutrient designed for soil cultivation during the flowering phase to encourage robust bloom production and fruit formation.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Coco A & B",
+     "description": "A two-part mineral base nutrient tailored specifically for growing in coco coir substrates, usable across both vegetative and flowering cycles.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Aqua Vega A & B",
+     "description": "A two-part base nutrient engineered for recirculating hydroponic systems (like NFT or DWC) during the vegetative growth phase.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Aqua Flores A & B",
+     "description": "A two-part base nutrient engineered for recirculating hydroponic systems during the flowering and fruiting phase.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Hydro Vega A & B",
+     "description": "A two-part base nutrient formulation designed for run-to-waste (non-recirculating) hydroponic systems in vegetation.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Hydro Flores A & B",
+     "description": "A two-part base nutrient formulation designed for run-to-waste (non-recirculating) hydroponic systems during bloom.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "RHIZOTONIC",
+     "description": "A powerful algae-based vegetative root bio-stimulant that accelerates new root expansion, increases plant resistance, and aids stress recovery.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "CANNAZYM",
+     "description": "A high-quality enzyme preparation that breaks down dead root material, improves soil architecture, and converts waste into bio-available nutrients.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "CANNABOOST Accelerator",
+     "description": "A yield-boosting metabolism accelerator that stimulates flower development, improves crop uniformity, and enhances natural flavor profile.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "PK 13/14",
+     "description": "A high-grade mixture of pure phosphorus and potassium applied during peak flowering to maximize bud mass and density.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Calmag Agent",
+     "description": "A calcium and magnesium buffer supplement designed to harden soft or reverse osmosis water and prevent uptake imbalances.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "pH- Grow",
+     "description": "A nitric acid-based liquid regulator used to lower pH levels in the nutrient solution during the vegetative stage.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "pH- Bloom",
+     "description": "A phosphoric acid-based liquid regulator used to adjust and lower pH levels during the flowering stage.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "pH+",
+     "description": "A potassium hydroxide solution designed to raise pH levels safely in nutrient reservoirs.",
+     "unit": "ml/L"
+    }
+   ]
+  }
+ ]
+}

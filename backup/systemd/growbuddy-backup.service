@@ -1,0 +1,12 @@
+[Unit]
+Description=Pull GrowBuddy backup from the Pi
+Wants=network-online.target
+After=network-online.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/growbuddy-backup.sh
+# Exit code 75 = Pi unreachable; retry rather than mark the run done.
+Restart=on-failure
+RestartSec=15min

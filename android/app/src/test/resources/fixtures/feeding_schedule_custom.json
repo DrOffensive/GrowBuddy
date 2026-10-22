@@ -1,0 +1,33 @@
+{
+ "id": 2,
+ "profile_key": "custom-139885f2449c",
+ "display_name": "My soil",
+ "substrate": "soil",
+ "custom": true,
+ "weeks": [
+  {
+   "week": 1,
+   "phase": "Veg",
+   "nutrients": {
+    "Bio-Grow": 2.0
+   },
+   "ph": null,
+   "ec": {
+    "target": 1.2
+   },
+   "environment": {
+    "light_hours": 18
+   },
+   "notes": null
+  },
+  {
+   "week": 2,
+   "phase": "Flush",
+   "nutrients": {},
+   "ph": null,
+   "ec": null,
+   "environment": null,
+   "notes": null
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+[Unit]
+Description=GrowBuddy 2 server
+After=network-online.target bluetooth.target
+Wants=network-online.target bluetooth.target
+
+[Service]
+Type=simple
+User=growbuddy
+Group=growbuddy
+SupplementaryGroups=video bluetooth
+WorkingDirectory=/opt/growbuddy/server
+Environment=GROWBUDDY_CONFIG=/etc/growbuddy/config.toml
+# One worker only. See docs/ARCHITECTURE.md (process model).
+ExecStart=/opt/growbuddy/server/.venv/bin/uvicorn --factory growbuddy.main:create_app --host 0.0.0.0 --port 8000 --workers 1
+Restart=on-failure
+RestartSec=5
+StateDirectory=growbuddy
+# Group-readable so the growbuddy-backup user can pull (see backup/README.md)
+StateDirectoryMode=0750
+UMask=0027
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/growbuddy
+# Private writable /tmp: uploads over 1 MB are buffered there (ProtectSystem makes /tmp read-only)
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

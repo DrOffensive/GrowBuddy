@@ -1,0 +1,47 @@
+[project]
+name = "growbuddy"
+version = "2.4.0"
+description = "GrowBuddy 2 server: sensor logging, camera and API for the Raspberry Pi"
+requires-python = ">=3.11"
+license = "GPL-3.0-or-later"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "pydantic-settings>=2.6",
+    "aiosqlite>=0.20",
+    "bleak>=0.22",
+    "opencv-python-headless>=4.10",
+    "python-multipart>=0.0.12",
+    "httpx>=0.27",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "ruff>=0.8",
+    "mypy>=1.13",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/growbuddy"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "ASYNC", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+ignore_missing_imports = true

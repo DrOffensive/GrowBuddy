@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+
+# Runtime data (never commit). Anchored: a bare "data/" would also hide the
+# Android app's data/ source package.
+*.db
+*.db-wal
+*.db-shm
+/data/
+/snapshots/
+/server/data/
+/server/snapshots/
+server/config.toml
+
+# Android
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/.idea/
+android/captures/
+android/.kotlin/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Legacy reference trees: large (Unity Library) and contain secrets. Never commit.
+legacy/*
+!legacy/README.md
+
+# Local developer settings and simulated dev server state
+server/.deploy-host
+server/.dev/

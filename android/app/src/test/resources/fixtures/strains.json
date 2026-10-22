@@ -1,0 +1,37 @@
+{
+ "items": [
+  {
+   "id": 208,
+   "name": "(Gelato Acaiberry x Kush Mints) x Runtz",
+   "vendor": "Ripper Seeds",
+   "category": "Feminized",
+   "shop_category": "Indendørs",
+   "thc": null,
+   "cbd": null,
+   "flowering_days": "60-65",
+   "yield_indoor": null,
+   "height": null,
+   "url": "https://superseeds.dk/vare/gelato-acaiberrry-x-kush-mints-x-runtz-3-stk-ripper-seeds/",
+   "image_url": "https://cpanel.superseeds.dk/wp-content/uploads/2022/07/acaiberry-x-kush-mintz-x-runtz.jpg",
+   "description": null,
+   "custom": false
+  },
+  {
+   "id": 211,
+   "name": "Animal Cookies x Bubba Kush",
+   "vendor": "Ripper Seeds",
+   "category": "Feminized",
+   "shop_category": "Indendørs",
+   "thc": null,
+   "cbd": null,
+   "flowering_days": "60",
+   "yield_indoor": null,
+   "height": null,
+   "url": "https://superseeds.dk/vare/animal-cookies-x-bubba-kush-3-stk-ripper-seeds/",
+   "image_url": "https://cpanel.superseeds.dk/wp-content/uploads/2022/07/animal-cookies-x-bubba-kush-ripper-seeds.jpg",
+   "description": null,
+   "custom": false
+  }
+ ],
+ "total": 29
+}

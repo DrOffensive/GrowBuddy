@@ -1,0 +1,11 @@
+# ntfy server config for the Pi, installed as /etc/ntfy/server.yml by deploy/install.sh,
+# which sets base-url to the Pi's Tailscale name (install.sh --host).
+base-url: "http://growbuddy:2586"
+listen-http: ":2586"
+cache-file: "/var/cache/ntfy/cache.db"
+auth-file: "/var/lib/ntfy/user.db"
+auth-default-access: "deny-all"
+behind-proxy: false
+# Users (created by install.sh):
+#   growbuddy  write-only on "growbuddy" and "up*"; its token is in /etc/growbuddy/config.toml [ntfy].token
+#   phone      read-only on "growbuddy" and "up*"; the login for the ntfy Android app

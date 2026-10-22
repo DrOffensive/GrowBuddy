@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily GrowBuddy backup pull
+
+[Timer]
+OnCalendar=*-*-* 04:00
+# Laptop is often off/asleep at 04:00: run at next boot/wake instead.
+Persistent=true
+RandomizedDelaySec=10min
+
+[Install]
+WantedBy=timers.target

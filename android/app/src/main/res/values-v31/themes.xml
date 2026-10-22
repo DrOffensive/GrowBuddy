@@ -1,0 +1,10 @@
+<resources>
+    <!-- 0.1.6 splash: white background; the full logo follows in the app's own splash screen. -->
+    <style name="Theme.GrowBuddy" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowSplashScreenBackground">#FFFFFF</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_icon</item>
+    </style>
+</resources>

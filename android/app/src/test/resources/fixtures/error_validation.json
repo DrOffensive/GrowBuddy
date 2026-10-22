@@ -1,0 +1,1 @@
+{"error":{"code":"validation_error","message":"Request validation failed","details":[{"type":"value_error","loc":["body","mac"],"msg":"Value error, invalid MAC address: 'bad'","input":"bad","ctx":{"error":{}}}]}}

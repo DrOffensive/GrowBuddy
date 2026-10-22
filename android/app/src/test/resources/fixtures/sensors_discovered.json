@@ -1,0 +1,1 @@
+[{"mac":"02:00:00:00:00:01","name":"SIM tent","rssi":-64,"last_seen":1792286014594,"encrypted":false,"values":{"temperature_c":25.48,"humidity_pct":60.89,"battery_pct":90,"voltage_v":2.95}},{"mac":"02:00:00:00:00:02","name":"SIM drying","rssi":-74,"last_seen":1792286014594,"encrypted":false,"values":{"temperature_c":19.07,"humidity_pct":54.11,"battery_pct":65,"voltage_v":2.95}}]

@@ -1,0 +1,5 @@
+# Copy to ~/.config/growbuddy-backup.conf
+PI_HOST="growbuddy-backup"                 # ~/.ssh/config alias (see README)
+PI_DATA_DIR="/var/lib/growbuddy"
+DEST="$HOME/GrowBuddyBackup"
+KEEP_DAILY=30

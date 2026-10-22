@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Environment widget, collapsed: ‹ three small dials › (see data/widget/EnvironmentWidget.kt). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/widget_prev"
+        style="@style/TextAppearance.Compat.Notification.Title"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/widget_previous"
+        android:gravity="center"
+        android:text="@string/widget_arrow_previous"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/widget_dial_temperature"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/widget_dial_humidity"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/widget_dial_vpd"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="4dp"
+        android:layout_weight="1"
+        android:importantForAccessibility="no"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/widget_next"
+        style="@style/TextAppearance.Compat.Notification.Title"
+        android:layout_width="32dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/widget_next"
+        android:gravity="center"
+        android:text="@string/widget_arrow_next"
+        android:textSize="28sp" />
+</LinearLayout>
