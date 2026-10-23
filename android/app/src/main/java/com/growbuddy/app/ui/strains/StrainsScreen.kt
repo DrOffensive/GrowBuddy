@@ -59,6 +59,7 @@ import androidx.compose.ui.platform.LocalUriHandler
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -169,14 +170,31 @@ private fun categoryLabel(category: String): String = when (category) {
     else -> category
 }
 
-/** Vendor logos shipped with 0.1.6; matching ignores case and punctuation ("Barney’s Farm" / "Barneys Farm"). */
+/** Vendor logos (white silhouettes); matching ignores case and punctuation ("Barney’s Farm" / "Barneys Farm"). */
 private fun brandIcon(vendor: String?): Int? {
     val key = vendor?.lowercase()?.filter { it.isLetter() } ?: return null
     return when {
         "barneysfarm" in key -> R.drawable.brand_barneys_farm
         "fastbuds" in key -> R.drawable.brand_fastbuds
+        "rqs" in key || "royalqueen" in key -> R.drawable.brand_royal_queen_seeds
+        "anesia" in key -> R.drawable.brand_anesia_seeds
+        "ripperseeds" in key -> R.drawable.brand_ripper_seeds
+        "purplecity" in key -> R.drawable.brand_purple_city_genetics
+        "thseeds" in key -> R.drawable.brand_th_seeds
+        "kannabia" in key -> R.drawable.brand_kannabia
+        "dnagenetics" in key -> R.drawable.brand_dna_genetics
         else -> null
     }
+}
+
+/**
+ * Initials for a vendor without a logo: short all-caps words are kept whole, other words give their
+ * first letter ("Green House Seeds" → GHS, "CPH Seeds" → CPH, "T.H. Seeds" → THS). At most three letters.
+ */
+internal fun vendorMonogram(vendor: String?): String? {
+    val words = vendor.orEmpty().split(' ', '-').map { w -> w.filter { it.isLetter() } }.filter { it.isNotEmpty() }
+    val letters = words.joinToString("") { w -> if (w.length <= 3 && w.all { it.isUpperCase() }) w else w.take(1).uppercase() }
+    return letters.take(3).ifEmpty { null }
 }
 
 @Composable
@@ -285,7 +303,15 @@ private fun StrainRow(strain: Strain, onClick: () -> Unit) {
         if (icon != null) {
             Image(painterResource(icon), strain.vendor, Modifier.size(40.dp), colorFilter = ColorFilter.tint(Palette.TextPrimary))
         } else {
-            Box(Modifier.size(40.dp).clip(CircleShape).background(Palette.TextPrimary))
+            // No logo: the vendor's initials cut out of the white disc.
+            Box(Modifier.size(40.dp).clip(CircleShape).background(Palette.TextPrimary), contentAlignment = Alignment.Center) {
+                vendorMonogram(strain.vendor)?.let { initials ->
+                    Text(
+                        initials, color = Palette.CardRaised, maxLines = 1,
+                        style = MaterialTheme.typography.labelLarge.copy(fontWeight = FontWeight.Bold, fontSize = if (initials.length > 2) 14.sp else 18.sp),
+                    )
+                }
+            }
         }
         Spacer(Modifier.width(18.dp))
         Text(

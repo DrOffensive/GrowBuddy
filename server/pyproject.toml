@@ -1,6 +1,6 @@
 [project]
 name = "growbuddy"
-version = "2.5.2"
+version = "2.5.3"
 description = "GrowBuddy 2 server: sensor logging, camera and API for the Raspberry Pi"
 requires-python = ">=3.11"
 license = "GPL-3.0-or-later"

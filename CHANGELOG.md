@@ -5,6 +5,16 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions
 follow [Semantic Versioning](https://semver.org/). One version number covers the
 server, the Android app and the backup together.
 
+## 2.5.3 - 2026-10-23
+
+### Android app
+
+- **Version:** 2.5.3 (build 253); the server reports 2.5.3 too.
+- **Strain catalog:** vendor logos for RQS, Anesia Seeds, Ripper Seeds, Purple
+  City Genetics, T.H. Seeds, Kannabia and DNA Genetics, next to Barney's Farm
+  and Fast Buds. Vendors without a logo show their initials (GHS, DP, …)
+  instead of a blank circle.
+
 ## 2.5.2 - 2026-10-23
 
 ### Android app
