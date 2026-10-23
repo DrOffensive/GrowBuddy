@@ -4,7 +4,7 @@
 
 - Developed on a Raspberry Pi 4 Model B (2 GB RAM, onboard Bluetooth
   CYW43455 on the UART, `hci0`, shared with Wi-Fi) running Raspberry Pi OS Lite
-  (Debian 13 trixie, 64-bit) on Wi-Fi. A Pi 3 Model B (1 GB) also works.
+  (Debian 13 trixie, 64-bit) on Wi-Fi. A Pi 4 or newer is required.
 - Referred to by name: the hostname (`growbuddy` in [INSTALL.md](INSTALL.md))
   via Tailscale MagicDNS, or `<hostname>.local` via mDNS on the LAN only. The
   LAN address comes from DHCP.

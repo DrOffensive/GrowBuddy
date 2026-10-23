@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 GrowBuddy 2 is a self-hosted grow monitor + grow journal, rebuilt from scratch to replace GrowBuddy 0.1.6, and published as open source (GPL-3.0-or-later). It has three independent parts:
 
-- `server/`: Python 3.11+ FastAPI on a Raspberry Pi (developed on a Pi 4 Model B, 2 GB RAM, Raspberry Pi OS Lite trixie; a Pi 3 works too). Multi-sensor BLE BTHome ingestion (bleak), USB webcam stream + hourly timelapse (OpenCV), grow journal, per-sensor alert evaluation → ntfy push, SQLite (WAL).
+- `server/`: Python 3.11+ FastAPI on a Raspberry Pi (developed on a Pi 4 Model B, 2 GB RAM, Raspberry Pi OS Lite trixie; a Pi 4 or newer is required). Multi-sensor BLE BTHome ingestion (bleak), USB webcam stream + hourly timelapse (OpenCV), grow journal, per-sensor alert evaluation → ntfy push, SQLite (WAL).
 - `android/`: Kotlin + Jetpack Compose client (AGP 9, compileSdk 37, minSdk 26) with manual DI via `AppContainer`, Retrofit/OkHttp/kotlinx.serialization and Coil. See `android/README.md` for status and structure.
 - `backup/`: bash/rsync script run by a systemd **user** timer on a Linux laptop/desktop. It **pulls** nightly DB snapshots plus `snapshots/` and `photos/` from the Pi over SSH.
 

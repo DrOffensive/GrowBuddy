@@ -18,17 +18,44 @@ Your data stays on your own hardware. Remote access goes through your own
 Tailscale network, and notifications come from an ntfy server on the Pi.
 No cloud services and no open ports.
 
+## Requirements
+
+- **Raspberry Pi 4 or newer** (2 GB RAM or more), with its **official power
+  supply** and a microSD card (16 GB or more)
+- **BLE hygrometers:** Xiaomi Mijia LYWSD03MMC flashed to BTHome (or any other
+  unencrypted BTHome v2 sensor), one per area
+- **USB webcam** (optional): any UVC webcam with MJPEG, e.g. a Logitech C270
+- **Android phone** with Android 8 or newer
+- **A computer** with Chrome or Edge, for flashing the SD card and the sensors
+- A free **Tailscale** account for remote access
+
+**Expected setup time:** about an hour from an empty SD card to live dials on
+your phone, most of it spent waiting for downloads.
+
 > **Legal note:** growing cannabis is illegal in many countries and regions.
 > GrowBuddy is a monitoring and journaling tool. Check your local laws; using
 > it is your responsibility.
 
+## Screenshots
+
+<p align="center">
+  <img src="Screenshots%20for%20Git/Screenshot_20261022_141738_GrowBuddy.jpg" width="200" alt="Dashboard">
+  <img src="Screenshots%20for%20Git/Screenshot_20261023_143641_GrowBuddy.jpg" width="200" alt="History charts">
+  <img src="Screenshots%20for%20Git/Screenshot_20261023_143625_GrowBuddy.jpg" width="200" alt="Alerts">
+  <img src="Screenshots%20for%20Git/Screenshot_20261022_141803_GrowBuddy.jpg" width="200" alt="Grow log">
+</p>
+<p align="center">
+  <img src="Screenshots%20for%20Git/Screenshot_20261022_141744_GrowBuddy.jpg" width="200" alt="Plants">
+  <img src="Screenshots%20for%20Git/Screenshot_20261022_141753_GrowBuddy.jpg" width="200" alt="Plant details">
+  <img src="Screenshots%20for%20Git/Screenshot_20261023_143529_GrowBuddy.jpg" width="200" alt="Feeding schedule">
+  <img src="Screenshots%20for%20Git/Screenshot_20261023_143555_GrowBuddy.jpg" width="200" alt="Strain catalog">
+</p>
+
 ## Getting started
 
-You need a Raspberry Pi 4 (or 3) with its official power supply, Xiaomi
-LYWSD03MMC hygrometers flashed to BTHome, optionally a USB webcam, and an
-Android phone. **[docs/INSTALL.md](docs/INSTALL.md)** walks through
-everything: flashing the sensors, the Pi, Tailscale, the one-command
-installer, ntfy, the app and backups.
+**[docs/INSTALL.md](docs/INSTALL.md)** walks through everything: flashing
+the sensors, the Pi, Tailscale, the one-command installer, ntfy, the app and
+backups.
 
 The short version, on a Pi running Raspberry Pi OS Lite with Tailscale:
 
@@ -45,7 +72,7 @@ and enter the server URL and token that the installer prints.
 
 | Part | Location | Runs on | Stack |
 |---|---|---|---|
-| Server API | [`server/`](server/) | Raspberry Pi 4 B / 3 B | Python 3.11+, FastAPI, SQLite (WAL), bleak, OpenCV, ntfy |
+| Server API | [`server/`](server/) | Raspberry Pi 4 or newer | Python 3.11+, FastAPI, SQLite (WAL), bleak, OpenCV, ntfy |
 | Android app | [`android/`](android/) | Phone (Android 8+) | Kotlin, Jetpack Compose, Material 3 |
 | Daily backup | [`backup/`](backup/) | A Linux computer | rsync over SSH + systemd user timer |
 

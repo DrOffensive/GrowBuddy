@@ -24,7 +24,7 @@ ntfy.sh account.
 
 | | Notes |
 |---|---|
-| **Raspberry Pi 4 Model B** (2 GB or more) | A Pi 3 B works too (1 GB, a bit slower). It needs onboard Bluetooth and Wi-Fi or Ethernet |
+| **Raspberry Pi 4 or newer** (2 GB or more) | It needs onboard Bluetooth and Wi-Fi or Ethernet |
 | **Official Pi power supply** (5.1 V / 3 A for the Pi 4) | Phone chargers cause under-voltage, which hangs Bluetooth and powers down the webcam |
 | microSD card, 16 GB or more | 32 GB gives room for a year of hourly timelapse frames |
 | **USB webcam** (optional) | Any UVC webcam with MJPEG, for example a Logitech C270 |
