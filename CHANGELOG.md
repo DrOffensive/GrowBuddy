@@ -29,6 +29,9 @@ More nutrient brands and built-in feeding schedules.
 - **Fill from schedule** picks the nutrient line with the most of the
   schedule's products, so names shared by two brands ("Cocos A") land on the
   right one.
+- **Default schedule:** until you pick one, the app uses the oldest schedule
+  (BioBizz) instead of the first by name, so new built-in schedules don't
+  change it.
 
 ## 2.4.0 - 2026-10-23
 

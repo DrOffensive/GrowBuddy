@@ -47,8 +47,8 @@ class ScheduleWeeksTest {
     }
 
     @Test
-    fun chosenScheduleFallsBackToTheFirst() {
-        val list = listOf(FeedingScheduleSummary(1, "a", "A", weeks = 1), FeedingScheduleSummary(2, "b", "B", weeks = 1))
+    fun chosenScheduleFallsBackToTheOldest() {
+        val list = listOf(FeedingScheduleSummary(2, "b", "B", weeks = 1), FeedingScheduleSummary(1, "a", "A", weeks = 1))
         assertEquals(2L, pickSchedule(list, 2)?.id)
         assertEquals(1L, pickSchedule(list, 99)?.id)
         assertEquals(1L, pickSchedule(list, null)?.id)

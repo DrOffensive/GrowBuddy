@@ -27,9 +27,12 @@ fun scheduleWeekOf(plant: Plant, schedule: FeedingSchedule): ScheduleWeekOf? {
     return week?.let { ScheduleWeekOf(it, plantWeek) }
 }
 
-/** The schedule to use: the one chosen before if it still exists, else the first. */
+/**
+ * The schedule to use: the one chosen before if it still exists, else the oldest (the list is
+ * sorted by name, so taking the first would change whenever a new built-in schedule is seeded).
+ */
 fun pickSchedule(summaries: List<FeedingScheduleSummary>, chosenId: Long?): FeedingScheduleSummary? =
-    summaries.firstOrNull { it.id == chosenId } ?: summaries.firstOrNull()
+    summaries.firstOrNull { it.id == chosenId } ?: summaries.minByOrNull { it.id }
 
 /** A schedule week's phase (Veg / Flower / Flush) in the app language. */
 fun schedulePhaseLabel(phase: String): String = when (phase) {
