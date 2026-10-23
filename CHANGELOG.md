@@ -5,6 +5,15 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions
 follow [Semantic Versioning](https://semver.org/). One version number covers the
 server, the Android app and the backup together.
 
+## 2.5.2 - 2026-10-23
+
+### Android app
+
+- **Version:** 2.5.2 (build 252); the server reports 2.5.2 too.
+- **Feeding schedule:** the wall of schedule chips is replaced by an
+  "Active schedule" card at the top. Tapping it opens a sheet from below that
+  lists your own schedules, then the built-in ones, with substrate and weeks.
+
 ## 2.5.1 - 2026-10-23
 
 CANNA schedules and disclaimers.

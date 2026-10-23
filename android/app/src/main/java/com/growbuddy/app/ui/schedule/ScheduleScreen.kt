@@ -2,6 +2,7 @@ package com.growbuddy.app.ui.schedule
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
@@ -10,25 +11,33 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.GridItemSpan
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Add
-import androidx.compose.material3.FilterChip
+import androidx.compose.material.icons.outlined.ArrowDropDown
+import androidx.compose.material.icons.outlined.Check
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
+import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.stringResource
@@ -53,6 +62,7 @@ import com.growbuddy.app.ui.common.ErrorBox
 import com.growbuddy.app.ui.common.LoadingBox
 import com.growbuddy.app.ui.common.PageHeader
 import com.growbuddy.app.ui.common.appContainer
+import com.growbuddy.app.ui.common.appPlural
 import com.growbuddy.app.ui.common.appString
 import com.growbuddy.app.ui.common.bestLineFor
 import com.growbuddy.app.ui.common.formatNumber
@@ -119,6 +129,7 @@ fun ScheduleScreen(onBack: () -> Unit, onEdit: (editId: Long?, copyFromId: Long?
     val vm = viewModel { ScheduleViewModel(container) }
     LaunchedEffect(Unit) { vm.refresh() } // also when coming back from the editor
     val schedule = vm.schedule
+    var picking by remember { mutableStateOf(false) }
     Column(Modifier.fillMaxSize()) {
         PageHeader(appString(R.string.sched_title), onBack = onBack) {
             IconButton(onClick = { onEdit(null, null) }) { Icon(Icons.Outlined.Add, appString(R.string.sched_new), tint = Palette.TextPrimary) }
@@ -139,21 +150,7 @@ fun ScheduleScreen(onBack: () -> Unit, onEdit: (editId: Long?, copyFromId: Long?
                 ) {
                     item(span = { GridItemSpan(maxLineSpan) }) {
                         Column(verticalArrangement = Arrangement.spacedBy(6.dp)) {
-                            if (vm.summaries.size > 1) {
-                                FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                                    vm.summaries.forEach { s ->
-                                        FilterChip(selected = s.id == schedule.id, onClick = { vm.choose(s.id) }, label = { Text(s.displayName) })
-                                    }
-                                }
-                            }
-                            Text(schedule.displayName, style = MaterialTheme.typography.headlineSmall)
-                            Text(
-                                listOfNotNull(
-                                    if (schedule.custom) stringResource(R.string.sched_custom) else stringResource(R.string.sched_builtin),
-                                    schedule.substrate?.let { stringResource(R.string.sched_substrate, it) },
-                                ).joinToString(" · "),
-                                color = Palette.TextSecondary,
-                            )
+                            ActiveSchedule(schedule, canPick = vm.summaries.size > 1) { picking = true }
                             Text(stringResource(R.string.sched_disclaimer), style = MaterialTheme.typography.bodyMedium, color = Palette.Warning)
                             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                                 OutlinedButton(onClick = { onEdit(null, schedule.id) }) { Text(stringResource(R.string.common_duplicate)) }
@@ -171,7 +168,78 @@ fun ScheduleScreen(onBack: () -> Unit, onEdit: (editId: Long?, copyFromId: Long?
             }
         }
     }
+    if (picking) {
+        SchedulePicker(vm.summaries, schedule?.id, onDismiss = { picking = false }) {
+            picking = false
+            vm.choose(it)
+        }
+    }
     ConfirmDialog(vm.confirm) { vm.confirm = null }
+}
+
+private fun scheduleInfo(custom: Boolean, substrate: String?): String = listOfNotNull(
+    appString(if (custom) R.string.sched_custom else R.string.sched_builtin),
+    substrate?.let { appString(R.string.sched_substrate, it) },
+).joinToString(" · ")
+
+/** The schedule shown and fed by; tapping it opens [SchedulePicker]. */
+@Composable
+private fun ActiveSchedule(schedule: FeedingSchedule, canPick: Boolean, onPick: () -> Unit) {
+    Row(
+        Modifier
+            .fillMaxWidth()
+            .clip(RoundedCornerShape(6.dp))
+            .background(Palette.CardRaised)
+            .clickable(enabled = canPick, onClick = onPick)
+            .padding(horizontal = 12.dp, vertical = 10.dp),
+        verticalAlignment = Alignment.CenterVertically,
+    ) {
+        Column(Modifier.weight(1f)) {
+            Text(stringResource(R.string.sched_active), style = MaterialTheme.typography.labelLarge, color = Palette.TextSecondary)
+            Text(schedule.displayName, style = MaterialTheme.typography.headlineSmall)
+            Text(scheduleInfo(schedule.custom, schedule.substrate), color = Palette.TextSecondary)
+        }
+        if (canPick) Icon(Icons.Outlined.ArrowDropDown, stringResource(R.string.sched_choose), tint = Palette.TextPrimary)
+    }
+}
+
+/** Bottom sheet listing every schedule: the user's own first, then the built-in ones. */
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun SchedulePicker(summaries: List<FeedingScheduleSummary>, selectedId: Long?, onDismiss: () -> Unit, onChoose: (Long) -> Unit) {
+    val (custom, builtin) = summaries.partition { it.custom }
+    ModalBottomSheet(onDismissRequest = onDismiss, sheetState = rememberModalBottomSheetState(skipPartiallyExpanded = true)) {
+        LazyColumn(Modifier.navigationBarsPadding(), contentPadding = PaddingValues(start = 16.dp, end = 16.dp, bottom = 24.dp)) {
+            item { Text(stringResource(R.string.sched_choose), style = MaterialTheme.typography.headlineMedium, modifier = Modifier.padding(bottom = 8.dp)) }
+            listOf(R.string.sched_section_custom to custom, R.string.sched_section_builtin to builtin).forEach { (title, list) ->
+                if (list.isEmpty()) return@forEach
+                item { Text(stringResource(title), style = MaterialTheme.typography.titleMedium, color = Palette.TextSecondary, modifier = Modifier.padding(top = 12.dp, bottom = 4.dp)) }
+                items(list.size, key = { list[it].id }) { i ->
+                    val s = list[i]
+                    val selected = s.id == selectedId
+                    Row(
+                        Modifier
+                            .fillMaxWidth()
+                            .clip(RoundedCornerShape(6.dp))
+                            .background(if (selected) Palette.NavCenter else androidx.compose.ui.graphics.Color.Transparent)
+                            .clickable { onChoose(s.id) }
+                            .padding(horizontal = 12.dp, vertical = 10.dp),
+                        verticalAlignment = Alignment.CenterVertically,
+                    ) {
+                        Column(Modifier.weight(1f)) {
+                            Text(s.displayName, style = MaterialTheme.typography.titleMedium)
+                            Text(
+                                listOfNotNull(s.substrate?.let { appString(R.string.sched_substrate, it) }, appPlural(R.plurals.sched_weeks, s.weeks, s.weeks)).joinToString(" · "),
+                                style = MaterialTheme.typography.bodyMedium,
+                                color = Palette.TextSecondary,
+                            )
+                        }
+                        if (selected) Icon(Icons.Outlined.Check, null, tint = Palette.NavSelected)
+                    }
+                }
+            }
+        }
+    }
 }
 
 private fun phaseColor(phase: String) = when (phase.lowercase()) {

@@ -193,6 +193,14 @@
     <string name="sched_plant_past_end">%1$s (uge %2$d)</string>
     <string name="sched_custom">Eget</string>
     <string name="sched_builtin">Indbygget</string>
+    <string name="sched_active">Aktivt skema</string>
+    <string name="sched_choose">Vælg skema</string>
+    <string name="sched_section_custom">Dine skemaer</string>
+    <string name="sched_section_builtin">Indbyggede skemaer</string>
+    <plurals name="sched_weeks">
+        <item quantity="one">%1$d uge</item>
+        <item quantity="other">%1$d uger</item>
+    </plurals>
     <string name="sched_substrate">substrat: %1$s</string>
     <string name="sched_disclaimer">Disse skemaer er kun vejledende! Tjek altid gødningsproducentens officielle gødningsskema og dine planters sundhed først.</string>
     <string name="sched_week">Uge %1$d</string>
