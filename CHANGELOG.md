@@ -203,12 +203,12 @@ The move to a Raspberry Pi 4, and sturdier Bluetooth recovery.
 
 - **Version:** reports 2.1.1, matching the app.
 - **Pi 4:** GrowBuddy now runs on a Raspberry Pi 4 Model B (2 GB) with the
-  official power supply, which ends the under-voltage problems. The Pi 3's data,
-  settings, notification users and Tailscale identity were carried over, so the
-  app, notifications and backup work unchanged.
+  official power supply, which ends the under-voltage problems. The old Pi's
+  data, settings, notification users and Tailscale identity were carried over,
+  so the app, notifications and backup work unchanged.
 - **Bluetooth recovery:** when the Bluetooth chip stops answering, the sensor
   scanner now gives up on the call after 30 seconds (10 s when stopping) and
-  retries, instead of waiting forever. On the Pi 3 this left the tent sensor
+  retries, instead of waiting forever. On the old Pi this left the tent sensor
   without readings for 13 hours.
 - **Install script:** works on a brand-new Pi (it waits for ntfy's user
   database before adding users), switches Bluetooth on (fresh images ship it
