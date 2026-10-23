@@ -21,7 +21,8 @@ update. Removing one from a file doesn't delete it from existing databases.
 ]}
 ```
 
-`brand` is unique. `unit` defaults to `ml/L`.
+`brand` is unique. `unit` defaults to `ml/L`; schedule amounts are in it
+(e.g. `g/L`, `tabs/plant`).
 
 ## Feeding schedules
 
@@ -45,8 +46,11 @@ update. Removing one from a file doesn't delete it from existing databases.
   `custom-` (reserved for schedules made in the app).
 - `week`: 1, 2, 3, … counted from Sprout (docs/DOMAIN.md › Feeding schedules).
 - `phase`: `Veg`, `Flower` or `Flush`.
-- `nutrients`: product name → amount in ml/L (0 = not this week). Names
-  should match a product of one nutrient line in `nutrient_lines.json`
-  (case and punctuation are ignored), so the log wizard's "Fill from schedule"
-  can pick the line and products.
+- `nutrients`: product name → amount in the product's `unit` (0 = not this
+  week; names that aren't a product count as ml/L). Use the product names
+  from `nutrient_lines.json` and list every product of the line in each week
+  (0 when unused): the app matches names on letters only (case, digits and
+  punctuation are ignored) and takes the line with the most matching products,
+  so "Cocos A" goes to the right brand and "Fill from schedule" picks the line
+  and products.
 - `pH`, `EC`, `environment` and `notes` are optional.

@@ -1,3 +1,3 @@
 """GrowBuddy 2 server."""
 
-__version__ = "2.4.0"
+__version__ = "2.5.0"

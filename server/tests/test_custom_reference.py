@@ -26,7 +26,9 @@ WEEK: dict[str, Any] = {
 
 def _builtin(client: TestClient, auth: dict[str, str]) -> dict[str, Any]:
     (biobizz,) = [
-        s for s in client.get(f"{API}/feeding-schedules", headers=auth).json() if not s["custom"]
+        s
+        for s in client.get(f"{API}/feeding-schedules", headers=auth).json()
+        if s["profile_key"] == "biobizz"
     ]
     return biobizz  # type: ignore[no-any-return]
 
@@ -113,6 +115,7 @@ async def test_builtin_schedules_follow_the_seed(
     rows = await db.fetchall(
         """SELECT s.profile_key, s.display_name, COUNT(w.week) AS weeks FROM feeding_schedules s
            LEFT JOIN feeding_schedule_weeks w ON w.schedule_id = s.id
+           WHERE s.profile_key IN ('biobizz', 'custom-mine', 'new')
            GROUP BY s.id ORDER BY s.profile_key"""
     )
     assert [tuple(r) for r in rows] == [

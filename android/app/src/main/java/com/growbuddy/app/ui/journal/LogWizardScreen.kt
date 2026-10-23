@@ -90,9 +90,11 @@ import com.growbuddy.app.ui.common.SectionHeader
 import com.growbuddy.app.ui.common.appContainer
 import com.growbuddy.app.ui.common.appPlural
 import com.growbuddy.app.ui.common.appString
+import com.growbuddy.app.ui.common.bestLineFor
 import com.growbuddy.app.ui.common.formatAge
 import com.growbuddy.app.ui.common.formatDateTime
 import com.growbuddy.app.ui.common.formatPhase
+import com.growbuddy.app.ui.common.productKey
 import com.growbuddy.app.ui.schedule.ScheduleWeekOf
 import com.growbuddy.app.ui.schedule.pickSchedule
 import com.growbuddy.app.ui.schedule.scheduleWeekOf
@@ -124,7 +126,6 @@ class NutrientRow(product: String, amount: String = "") {
     var amount by mutableStateOf(amount)
 }
 
-private fun String.key() = lowercase().filter { it.isLetter() }
 private fun String.toNumber(): Double? = trim().replace(',', '.').takeIf { it.isNotEmpty() }?.toDoubleOrNull()
 
 class LogWizardViewModel(private val container: AppContainer, private val preselectedPlant: String?) : ViewModel() {
@@ -224,11 +225,11 @@ class LogWizardViewModel(private val container: AppContainer, private val presel
         }
 
     fun fillFromSchedule(week: FeedingWeek) {
-        val target = lines.firstOrNull { l -> week.nutrients.keys.any { n -> l.products.any { it.name.key() == n.key() } } } ?: return
+        val target = lines.bestLineFor(week.nutrients.keys) ?: return
         brand = target.brand
         nutrients.clear()
         week.nutrients.filterValues { it > 0 }.forEach { (name, amount) ->
-            val product = target.products.firstOrNull { it.name.key() == name.key() }?.name ?: name
+            val product = target.products.firstOrNull { it.name.productKey() == name.productKey() }?.name ?: name
             nutrients.add(NutrientRow(product, amount.toString()))
         }
         week.ph?.target?.let { ph = it.toString() }

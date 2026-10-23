@@ -5,6 +5,31 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions
 follow [Semantic Versioning](https://semver.org/). One version number covers the
 server, the Android app and the backup together.
 
+## 2.5.0 - 2026-10-23
+
+More nutrient brands and built-in feeding schedules.
+
+### Server
+
+- **Version:** reports 2.5.0, matching the app.
+- **Nutrient lines:** eight new brands: Advanced Nutrients, Athena Nutrients,
+  BioTabs, FoxFarm, General Hydroponics, Green House Powder Feeding,
+  House & Garden and Plagron (ten in all). Products keep their own unit
+  (`ml/L`, `g/L`, `tabs/plant`, …).
+- **Feeding schedules:** twelve new built-in schedules, coco and soil each:
+  General Hydroponics FloraSeries, Advanced Nutrients pH Perfect Sensi,
+  Athena Blended, Plagron, BioTabs and Green House Powder Feeding. They reach
+  existing installs on the next start; custom schedules are left alone.
+
+### Android app
+
+- **Version:** 2.5.0 (build 250).
+- **Units per product:** schedule week cards and the schedule editor show each
+  nutrient's own unit instead of always ml/L.
+- **Fill from schedule** picks the nutrient line with the most of the
+  schedule's products, so names shared by two brands ("Cocos A") land on the
+  right one.
+
 ## 2.4.0 - 2026-10-23
 
 GrowBuddy in Danish, and room for more languages.

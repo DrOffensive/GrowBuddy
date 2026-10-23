@@ -196,7 +196,6 @@
     <string name="sched_custom">Custom</string>
     <string name="sched_builtin">Built-in</string>
     <string name="sched_substrate">substrate: %1$s</string>
-    <string name="sched_amounts">amounts in ml/L</string>
     <string name="sched_week">Week %1$d</string>
     <string name="sched_now">Now: %1$s</string>
     <string name="sched_day">Day %1$s</string>
@@ -222,13 +221,13 @@
     <string name="editor_name">Name</string>
     <string name="editor_substrate">Substrate (optional)</string>
     <string name="editor_substrate_hint">soil, coco, hydro…</string>
-    <string name="editor_week1_hint">Week 1 is the week of the Sprout milestone. Amounts in ml/L.</string>
+    <string name="editor_week1_hint">Week 1 is the week of the Sprout milestone. Amounts are in each product\'s unit (ml/L for other names).</string>
     <string name="editor_add_week">Add week</string>
     <string name="editor_add_week_copy">Add week %1$d (copy of week %2$d)</string>
     <string name="editor_collapse">Collapse</string>
     <string name="editor_expand">Expand</string>
     <string name="editor_no_nutrients">No nutrients</string>
-    <string name="editor_nutrients_ml">Nutrients (ml/L)</string>
+    <string name="editor_nutrients">Nutrients</string>
     <string name="editor_remove_nutrient">Remove nutrient</string>
     <string name="editor_add_all">+ all %1$s</string>
     <string name="editor_target">Target</string>

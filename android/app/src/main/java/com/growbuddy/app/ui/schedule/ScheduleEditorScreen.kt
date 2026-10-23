@@ -71,6 +71,8 @@ import com.growbuddy.app.ui.common.PageHeader
 import com.growbuddy.app.ui.common.SectionHeader
 import com.growbuddy.app.ui.common.appContainer
 import com.growbuddy.app.ui.common.appString
+import com.growbuddy.app.ui.common.bestLineFor
+import com.growbuddy.app.ui.common.unitOf
 import com.growbuddy.app.ui.theme.NumericStyle
 import com.growbuddy.app.ui.theme.Palette
 import kotlinx.coroutines.launch
@@ -217,6 +219,9 @@ class ScheduleEditorViewModel(private val container: AppContainer, private val e
     /** Product names of all nutrient lines, for the name suggestions. */
     val productNames: List<String> get() = lines.flatMap { l -> l.products.map { it.name } }.distinct()
 
+    /** Unit of a nutrient: from the line that has most of the schedule's products. */
+    fun unitOf(name: String): String = lines.bestLineFor(weeks.flatMap { w -> w.nutrients.map { it.name } }).unitOf(name)
+
     fun addWeek() {
         weeks.add(weeks.lastOrNull()?.copy() ?: WeekDraft(null))
         expanded = weeks.lastIndex
@@ -328,11 +333,11 @@ private fun WeekEditor(vm: ScheduleEditorViewModel, index: Int, week: WeekDraft)
         FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
             PHASES.forEach { p -> FilterChip(selected = week.phase == p, onClick = { week.phase = p }, label = { Text(schedulePhaseLabel(p)) }) }
         }
-        SectionHeader(stringResource(R.string.editor_nutrients_ml))
+        SectionHeader(stringResource(R.string.editor_nutrients))
         week.nutrients.forEachIndexed { n, row ->
             Row(verticalAlignment = Alignment.CenterVertically, horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 ProductField(vm.productNames, row.name, { row.name = it }, Modifier.weight(1f))
-                Number("ml/L", row.amount, { row.amount = it }, Modifier.weight(0.45f))
+                Number(vm.unitOf(row.name), row.amount, { row.amount = it }, Modifier.weight(0.45f))
                 IconButton(onClick = { week.nutrients.removeAt(n) }) { Icon(Icons.Outlined.Close, appString(R.string.editor_remove_nutrient)) }
             }
         }

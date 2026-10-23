@@ -114,14 +114,20 @@ def test_strain_create_and_patch(client: TestClient, auth: dict[str, str]) -> No
 
 def test_nutrient_lines(client: TestClient, auth: dict[str, str]) -> None:
     lines = client.get(f"{API}/nutrient-lines", headers=auth).json()
-    assert [line["brand"] for line in lines] == ["Biobizz", "CANNA"]
-    assert len(lines[1]["products"]) == 15
-    assert lines[0]["products"][0]["unit"]
+    brands = [line["brand"] for line in lines]
+    assert brands[:3] == ["Advanced Nutrients", "Athena Nutrients", "Biobizz"]
+    assert len(brands) == 10
+    by_brand = {line["brand"]: line for line in lines}
+    assert len(by_brand["CANNA"]["products"]) == 15
+    units = {p["name"]: p["unit"] for p in by_brand["BioTabs"]["products"]}
+    assert units["BioTabs Tablets"] == "tabs/plant" and units["Orgatrex"] == "ml/L"
 
 
 def test_feeding_schedules(client: TestClient, auth: dict[str, str]) -> None:
-    (summary,) = client.get(f"{API}/feeding-schedules", headers=auth).json()
-    assert (summary["profile_key"], summary["weeks"]) == ("biobizz", 10)
+    summaries = client.get(f"{API}/feeding-schedules", headers=auth).json()
+    assert len(summaries) == 13
+    (summary,) = [s for s in summaries if s["profile_key"] == "biobizz"]
+    assert summary["weeks"] == 10
     schedule = client.get(f"{API}/feeding-schedules/{summary['id']}", headers=auth).json()
     week1 = schedule["weeks"][0]
     assert week1["week"] == 1 and week1["phase"] == "Veg"

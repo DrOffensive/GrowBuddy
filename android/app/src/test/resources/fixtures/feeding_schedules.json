@@ -1,9 +1,105 @@
 [
  {
+  "id": 4,
+  "profile_key": "advanced-nutrients-sensi-coco",
+  "display_name": "Advanced Nutrients (pH Perfect Sensi Coco)",
+  "substrate": "coco",
+  "custom": false,
+  "weeks": 10
+ },
+ {
+  "id": 5,
+  "profile_key": "advanced-nutrients-sensi-soil",
+  "display_name": "Advanced Nutrients (pH Perfect Sensi Soil)",
+  "substrate": "soil",
+  "custom": false,
+  "weeks": 10
+ },
+ {
+  "id": 6,
+  "profile_key": "athena-blended-coco",
+  "display_name": "Athena Nutrients Blended (Coco)",
+  "substrate": "coco",
+  "custom": false,
+  "weeks": 10
+ },
+ {
+  "id": 7,
+  "profile_key": "athena-blended-soil",
+  "display_name": "Athena Nutrients Blended (Soil/Peat)",
+  "substrate": "soil",
+  "custom": false,
+  "weeks": 10
+ },
+ {
   "id": 1,
   "profile_key": "biobizz",
   "display_name": "BioBizz (Coco)",
   "substrate": "coco",
+  "custom": false,
+  "weeks": 10
+ },
+ {
+  "id": 10,
+  "profile_key": "biotabs-coco",
+  "display_name": "BioTabs Organic (Coco)",
+  "substrate": "coco",
+  "custom": false,
+  "weeks": 10
+ },
+ {
+  "id": 11,
+  "profile_key": "biotabs-soil",
+  "display_name": "BioTabs Organic (Soil)",
+  "substrate": "soil",
+  "custom": false,
+  "weeks": 10
+ },
+ {
+  "id": 2,
+  "profile_key": "ghe-floraseries-coco",
+  "display_name": "General Hydroponics FloraSeries (Coco/Hydro)",
+  "substrate": "coco",
+  "custom": false,
+  "weeks": 10
+ },
+ {
+  "id": 3,
+  "profile_key": "ghe-floraseries-soil",
+  "display_name": "General Hydroponics FloraSeries (Soil)",
+  "substrate": "soil",
+  "custom": false,
+  "weeks": 10
+ },
+ {
+  "id": 13,
+  "profile_key": "gh-powder-feeding-bio-soil",
+  "display_name": "Green House Powder Feeding (Bio Soil)",
+  "substrate": "soil",
+  "custom": false,
+  "weeks": 10
+ },
+ {
+  "id": 12,
+  "profile_key": "gh-powder-feeding-coco",
+  "display_name": "Green House Powder Feeding (Coco/Hydro)",
+  "substrate": "coco",
+  "custom": false,
+  "weeks": 10
+ },
+ {
+  "id": 8,
+  "profile_key": "plagron-coco",
+  "display_name": "Plagron 100% COCO",
+  "substrate": "coco",
+  "custom": false,
+  "weeks": 10
+ },
+ {
+  "id": 9,
+  "profile_key": "plagron-terra-soil",
+  "display_name": "Plagron 100% TERRA (Soil)",
+  "substrate": "soil",
   "custom": false,
   "weeks": 10
  }

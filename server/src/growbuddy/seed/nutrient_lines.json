@@ -141,6 +141,374 @@
      "unit": "ml/L"
     }
    ]
+  },
+  {
+   "brand": "General Hydroponics",
+   "description": "The foundational global standard for hydroponic and soil mineral nutrition, pioneering flexible multi-part base feeds and performance additives.",
+   "products": [
+    {
+     "name": "FloraGro",
+     "description": "Builds strong structural and foliar growth during the vegetative phase by providing essential nitrogen, potassium, and secondary minerals.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "FloraMicro",
+     "description": "The foundation of the 3-Part system, delivering crucial micronutrients, nitrogen, and calcium throughout the entire life cycle.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "FloraBloom",
+     "description": "Provides high levels of phosphorus and potassium to encourage robust flower formation, fruit development, and essential oil production.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "FloraNova Grow",
+     "description": "A highly concentrated one-part liquid nutrient that combines the strength of dry concentrates with the ease of a liquid for vegetative growth.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "FloraNova Bloom",
+     "description": "A dense one-part liquid bloom formula rich in phosphorus, potassium, and trace elements tailored for heavy flowering crops.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "CALiMAGic",
+     "description": "A concentrated blend of readily available calcium and magnesium designed to prevent deficiencies in coco coir and soft water setups.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Liquid KoolBloom",
+     "description": "A heavy-duty flowering additive engineered to accelerate bulking, stress resistance, and flower site proliferation in early to mid bloom.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Ripen / Final Flush",
+     "description": "A late-stage finishing agent designed to force uniform flower maturity and assist in rinsing excess mineral salts before harvest.",
+     "unit": "ml/L"
+    }
+   ]
+  },
+  {
+   "brand": "Advanced Nutrients",
+   "description": "High-tech synthetic and bio-mineral nutrient formulas featuring proprietary automatic pH-buffering technology and specialized bloom boosters.",
+   "products": [
+    {
+     "name": "pH Perfect Sensi Grow A",
+     "description": "Part A of a premium 2-part vegetative base nutrient with automatic pH-adjusting technology for maximum cation absorption.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "pH Perfect Sensi Grow B",
+     "description": "Part B of a premium 2-part vegetative base nutrient containing essential chelated trace minerals and nitrogen complexes.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "pH Perfect Sensi Bloom A",
+     "description": "Part A of a 2-part bloom base formula that automatically buffers reservoir pH while supplying flowering macronutrients.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "pH Perfect Sensi Bloom B",
+     "description": "Part B of a 2-part bloom base formula rich in targeted phosphorus and potassium ratios for floral density.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Voodoo Juice",
+     "description": "A potent liquid root inoculant containing beneficial microbe strains that colonize the root zone and enhance nutrient availability.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Big Bud",
+     "description": "A specialized bloom additive providing ideal L-amino acid ratios, phosphorus, and potassium to maximize flower weight and volume.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "B-52",
+     "description": "A vitamin B-complex and kelp extract supplement formulated to shield crops against environmental stress and increase metabolic activity.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Overdrive",
+     "description": "A late-stage flowering booster designed to restart flower production and maintain bud bulking during the final weeks of bloom.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Flawless Finish",
+     "description": "A chelating flushing formula that binds and clears residual nutrient salts from plant tissue and substrate prior to harvest.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "pH Perfect Sensi Coco Grow A",
+     "description": "The coco-specific version of Sensi Grow Part A, with extra calcium and magnesium for coco coir's cation exchange during vegetative growth.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "pH Perfect Sensi Coco Grow B",
+     "description": "Part B of the coco-specific Sensi Grow base, balancing phosphorus, potassium and micronutrients for vegetative growth in coco coir.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "pH Perfect Sensi Coco Bloom A",
+     "description": "The coco-specific version of Sensi Bloom Part A, supplying calcium, magnesium and nitrogen for flowering in coco coir.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "pH Perfect Sensi Coco Bloom B",
+     "description": "Part B of the coco-specific Sensi Bloom base, delivering phosphorus and potassium for flower development in coco coir.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Big Bud Coco",
+     "description": "The coco-tuned version of Big Bud, a phosphorus and potassium bloom booster for bigger, denser flowers in coco coir.",
+     "unit": "ml/L"
+    }
+   ]
+  },
+  {
+   "brand": "Athena Nutrients",
+   "description": "Clean, highly scalable mineral formulations engineered specifically for high-frequency fertigation and drip system commercial setups.",
+   "products": [
+    {
+     "name": "Blended Grow A",
+     "description": "Part A of a clean, sediment-free 2-part vegetative formula supplying calcium, nitrogen, and chelated iron.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Blended Grow B",
+     "description": "Part B of a 2-part vegetative feed delivering potassium, phosphorus, and essential secondary minerals.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Blended Bloom A",
+     "description": "Part A of a 2-part flowering base focused on precise bio-available mineral ratios for clean drip line irrigation.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Blended Bloom B",
+     "description": "Part B of a 2-part flowering base tailored to maintain optimal nitrogen-to-potassium ratios during fruit set.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Athena CaMg",
+     "description": "A targeted calcium and magnesium liquid supplement designed to complement soft water and high-intensity lighting conditions.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Athena PK",
+     "description": "A low-salt flowering booster engineered to supplement phosphorus and potassium without spiking medium EC or clogging drippers.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Athena Cleanse",
+     "description": "A hypochlorous acid-based hypochlorite treatment that keeps irrigation lines free of scale and organic bio-film while preserving root zone health.",
+     "unit": "ml/L"
+    }
+   ]
+  },
+  {
+   "brand": "Plagron",
+   "description": "A renowned Dutch nutrient manufacturer providing targeted mineral and organic lines for soil, coco, and hydroponic substrates.",
+   "products": [
+    {
+     "name": "Cocos A",
+     "description": "Part A of a highly concentrated 2-part mineral feed specially optimized for inert coco coir substrates.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Cocos B",
+     "description": "Part B of a 2-part mineral feed supplying complementary trace elements, phosphorus, and potassium for coco growing.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Terra Grow",
+     "description": "A 1-part liquid mineral fertilizer designed for soil cultivation to support fast vegetative growth and root stability.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Terra Bloom",
+     "description": "A 1-part liquid soil fertilizer packed with readily absorbable bloom elements to maximize flower yield.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Power Roots",
+     "description": "An organic root booster containing vitamins and humic acids to stimulate root branching and increase stress recovery.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Green Sensation",
+     "description": "A 4-in-1 powerful flowering booster that improves flowering, increases soil resistance, boosts flavor, and optimizes final yield.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Sugar Royal",
+     "description": "A biological amino acid supplement that enhances natural chlorophyll production, resin synthesis, and terpene development.",
+     "unit": "ml/L"
+    }
+   ]
+  },
+  {
+   "brand": "BioTabs",
+   "description": "An innovative slow-release organic cultivation system utilizing biological soil technology, beneficial fungi, and natural tablets.",
+   "products": [
+    {
+     "name": "BioTabs Tablets",
+     "description": "Slow-release organic fertilizer tablets pushed into the substrate to provide steady, season-long organic nitrogen and minerals.",
+     "unit": "tabs/plant"
+    },
+    {
+     "name": "Bactrex",
+     "description": "A dry water-soluble powder containing beneficial soil bacteria and trichoderma strains to protect roots and convert organic matter into food.",
+     "unit": "g/L"
+    },
+    {
+     "name": "Mycotrex",
+     "description": "A concentrated mycorrhizal fungus inoculant that attaches to root systems to increase root surface area by up to 700%.",
+     "unit": "g/plant"
+    },
+    {
+     "name": "Orgatrex",
+     "description": "A liquid organic fertilizer and soil conditioner made from alfalfa meal, molasses, and silicon to nourish microbial life.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Startrex",
+     "description": "An organic soil improver rich in humic acids and soil bacteria designed to revitalize potting mixes before planting.",
+     "unit": "g/L"
+    },
+    {
+     "name": "PK Booster Compost Tea",
+     "description": "An organic compost tea mix rich in high-potency phosphorus, potassium, and beneficial microorganisms for mid-bloom irrigation.",
+     "unit": "g/L"
+    }
+   ]
+  },
+  {
+   "brand": "Green House Powder Feeding",
+   "description": "A simplified dry-powder single-component nutrient system offering tailored mineral and 100% organic dry amendments.",
+   "products": [
+    {
+     "name": "Powder Feeding Grow",
+     "description": "An all-in-one dry mineral fertilizer engineered for vegetative growth, suitable for all substrates and high-nitrogen demands.",
+     "unit": "g/L"
+    },
+    {
+     "name": "Powder Feeding Short Flowering",
+     "description": "A dry mineral formula specifically balanced for short-flowering genetics requiring quick-release potassium and phosphorus.",
+     "unit": "g/L"
+    },
+    {
+     "name": "Powder Feeding Hybrids",
+     "description": "An all-in-one dry nutrient tailored for hybrid strains with an intermediate 8-10 week flowering duration.",
+     "unit": "g/L"
+    },
+    {
+     "name": "Powder Feeding Calcium",
+     "description": "A chelated dry calcium powder addition designed to supplement RO water and prevent soft-water calcium deficiencies.",
+     "unit": "g/L"
+    },
+    {
+     "name": "BioGrow",
+     "description": "An organic dry top-dress powder formulated for vegetative growth that slow-releases nutrients over an 8-week period.",
+     "unit": "g/L medium"
+    },
+    {
+     "name": "BioBloom",
+     "description": "An organic dry top-dress flower amendment providing essential natural phosphorus and beneficial fungi for heavy flowering.",
+     "unit": "g/L medium"
+    },
+    {
+     "name": "Bio Enhancer",
+     "description": "A water-soluble blend of humic acids, seaweed extract, and Trichoderma reesei designed to improve nutrient uptake and root vitality.",
+     "unit": "g/L"
+    }
+   ]
+  },
+  {
+   "brand": "House & Garden",
+   "description": "A top-tier Dutch mineral engineering manufacturer known for clean formulations, low-dosage requirements, and premium additives.",
+   "products": [
+    {
+     "name": "Cocos A",
+     "description": "Part A of a highly refined 2-part mineral base designed explicitly to account for the cation exchange properties of coco coir.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Cocos B",
+     "description": "Part B of a 2-part mineral base for coco coir, containing essential trace minerals and bloom catalysts.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Aqua Flakes A",
+     "description": "Part A of a specialized liquid base nutrient tailored for recirculating hydroponic systems and rockwool slabs.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Aqua Flakes B",
+     "description": "Part B of a liquid hydroponic base feed formulated to prevent salt buildup in closed-loop irrigation reservoirs.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Roots Excelurator",
+     "description": "A flagship root formulation that forms a protective membrane around roots while aggressively stimulating new root tips.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Bud XL",
+     "description": "An innovative flowering additive that extracts sugars from leaf tissue and redirects them into the flower mass for improved yield and terpene density.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Shooting Powder",
+     "description": "A high-potency dry bloom booster designed to trigger a secondary flowering push during the final weeks of bloom.",
+     "unit": "sachet/100L"
+    },
+    {
+     "name": "Multi Zyme",
+     "description": "A concentrated growth stimulator packed with enzymes that break down dead root material and turn it into absorbable plant food.",
+     "unit": "ml/L"
+    }
+   ]
+  },
+  {
+   "brand": "FoxFarm",
+   "description": "A classic North American manufacturer favored for rich soil blends, natural solubles, and high-potency liquid nutrient trios.",
+   "products": [
+    {
+     "name": "Big Bloom",
+     "description": "A 1-part micro-brewed organic liquid feed containing bat guano and earthworm castings to encourage root health and overall plant vigor.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Grow Big",
+     "description": "A concentrated liquid vegetative fertilizer engineered to promote lush growth, sturdy stems, and dense foliar canopy.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Tiger Bloom",
+     "description": "An ultra-potent, low-pH liquid flowering formula designed to induce massive bud development and heavy branching.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Bushdoctor Cal-Mag",
+     "description": "A specialized calcium and magnesium supplement to support cell wall structure and prevent blossom tip burn.",
+     "unit": "ml/L"
+    },
+    {
+     "name": "Open Sesame",
+     "description": "A high-phosphorus soluble dry fertilizer designed to bring plants into early flowering and increase floral site counts.",
+     "unit": "g/L"
+    },
+    {
+     "name": "Beastie Bloomz",
+     "description": "A heavy-duty mid-season soluble flower booster tailored to maximize bud density and overall blossom weight.",
+     "unit": "g/L"
+    },
+    {
+     "name": "Cha Ching",
+     "description": "A late-stage soluble dry fertilizer formula engineered to maximize essential oil production and final resin concentration.",
+     "unit": "g/L"
+    }
+   ]
   }
  ]
 }

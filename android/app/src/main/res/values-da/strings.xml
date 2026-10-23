@@ -194,7 +194,6 @@
     <string name="sched_custom">Eget</string>
     <string name="sched_builtin">Indbygget</string>
     <string name="sched_substrate">substrat: %1$s</string>
-    <string name="sched_amounts">mængder i ml/L</string>
     <string name="sched_week">Uge %1$d</string>
     <string name="sched_now">Nu: %1$s</string>
     <string name="sched_day">Dag %1$s</string>
@@ -220,13 +219,13 @@
     <string name="editor_name">Navn</string>
     <string name="editor_substrate">Substrat (valgfrit)</string>
     <string name="editor_substrate_hint">jord, kokos, hydro…</string>
-    <string name="editor_week1_hint">Uge 1 er ugen med milepælen Spirer frem. Mængder i ml/L.</string>
+    <string name="editor_week1_hint">Uge 1 er ugen med milepælen Spirer frem. Mængder er i produktets enhed (ml/L for andre navne).</string>
     <string name="editor_add_week">Tilføj uge</string>
     <string name="editor_add_week_copy">Tilføj uge %1$d (kopi af uge %2$d)</string>
     <string name="editor_collapse">Fold sammen</string>
     <string name="editor_expand">Fold ud</string>
     <string name="editor_no_nutrients">Ingen næringsstoffer</string>
-    <string name="editor_nutrients_ml">Næringsstoffer (ml/L)</string>
+    <string name="editor_nutrients">Næringsstoffer</string>
     <string name="editor_remove_nutrient">Fjern næringsstof</string>
     <string name="editor_add_all">+ alle %1$s</string>
     <string name="editor_target">Mål</string>

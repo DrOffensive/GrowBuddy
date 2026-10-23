@@ -43,6 +43,7 @@ import com.growbuddy.app.data.remote.FeedingSchedule
 import com.growbuddy.app.data.remote.FeedingScheduleSummary
 import com.growbuddy.app.data.remote.FeedingWeek
 import com.growbuddy.app.data.remote.MinMaxTarget
+import com.growbuddy.app.data.remote.NutrientLine
 import com.growbuddy.app.data.remote.Plant
 import com.growbuddy.app.data.remote.apiCall
 import com.growbuddy.app.data.remote.orThrow
@@ -53,7 +54,9 @@ import com.growbuddy.app.ui.common.LoadingBox
 import com.growbuddy.app.ui.common.PageHeader
 import com.growbuddy.app.ui.common.appContainer
 import com.growbuddy.app.ui.common.appString
+import com.growbuddy.app.ui.common.bestLineFor
 import com.growbuddy.app.ui.common.formatNumber
+import com.growbuddy.app.ui.common.unitOf
 import com.growbuddy.app.ui.theme.NumericStyle
 import com.growbuddy.app.ui.theme.Palette
 import kotlinx.coroutines.flow.first
@@ -66,6 +69,8 @@ class ScheduleViewModel(private val container: AppContainer) : ViewModel() {
     var schedule by mutableStateOf<FeedingSchedule?>(null)
         private set
     var plants by mutableStateOf<List<Plant>>(emptyList())
+        private set
+    var lines by mutableStateOf<List<NutrientLine>>(emptyList())
         private set
     var error by mutableStateOf<String?>(null)
         private set
@@ -81,6 +86,7 @@ class ScheduleViewModel(private val container: AppContainer) : ViewModel() {
                 }
                 .onFailure { error = it.message }
             apiCall { api.plants() }.onSuccess { plants = it }
+            apiCall { api.nutrientLines() }.onSuccess { lines = it }
         }
     }
 
@@ -145,7 +151,6 @@ fun ScheduleScreen(onBack: () -> Unit, onEdit: (editId: Long?, copyFromId: Long?
                                 listOfNotNull(
                                     if (schedule.custom) stringResource(R.string.sched_custom) else stringResource(R.string.sched_builtin),
                                     schedule.substrate?.let { stringResource(R.string.sched_substrate, it) },
-                                    appString(R.string.sched_amounts),
                                 ).joinToString(" · "),
                                 color = Palette.TextSecondary,
                             )
@@ -159,7 +164,8 @@ fun ScheduleScreen(onBack: () -> Unit, onEdit: (editId: Long?, copyFromId: Long?
                             vm.error?.let { Text(it, color = MaterialTheme.colorScheme.error) }
                         }
                     }
-                    items(schedule.weeks, key = { it.week }) { week -> WeekCard(week, labelsByWeek[week.week].orEmpty()) }
+                    val line = vm.lines.bestLineFor(schedule.weeks.flatMap { it.nutrients.keys })
+                    items(schedule.weeks, key = { it.week }) { week -> WeekCard(week, line, labelsByWeek[week.week].orEmpty()) }
                 }
             }
         }
@@ -176,7 +182,7 @@ private fun phaseColor(phase: String) = when (phase.lowercase()) {
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable
-internal fun WeekCard(week: FeedingWeek, plantsHere: List<String>) {
+internal fun WeekCard(week: FeedingWeek, line: NutrientLine?, plantsHere: List<String>) {
     val current = plantsHere.isNotEmpty()
     Column(
         Modifier
@@ -195,7 +201,7 @@ internal fun WeekCard(week: FeedingWeek, plantsHere: List<String>) {
         FlowRow(horizontalArrangement = Arrangement.spacedBy(6.dp), verticalArrangement = Arrangement.spacedBy(6.dp)) {
             week.nutrients.filterValues { it > 0 }.forEach { (name, amount) ->
                 Text(
-                    "$name ${formatNumber(amount, 1)}",
+                    "$name ${formatNumber(amount, 1)} ${line.unitOf(name)}",
                     style = NumericStyle,
                     modifier = Modifier.clip(RoundedCornerShape(4.dp)).background(Palette.NavCenter).padding(horizontal = 8.dp, vertical = 3.dp),
                 )

@@ -12,8 +12,8 @@ android {
         applicationId = "com.growbuddy.app"
         minSdk = 26
         targetSdk = 37
-        versionCode = 240
-        versionName = "2.4.0"
+        versionCode = 250
+        versionName = "2.5.0"
     }
 
     // App languages = the res/values-<code>/ folders (docs/LOCALIZATION.md). The generated

@@ -376,6 +376,4490 @@
      "notes": "Final flush. Harvest when trichomes are where you want them."
     }
    ]
+  },
+  {
+   "profileId": "ghe-floraseries-coco",
+   "displayName": "General Hydroponics FloraSeries (Coco/Hydro)",
+   "substrate": "coco",
+   "weekEntries": [
+    {
+     "week": 1,
+     "phase": "Veg",
+     "nutrients": {
+      "FloraMicro": 0.5,
+      "FloraGro": 0.5,
+      "FloraBloom": 0.5,
+      "CALiMAGic": 1.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 0.8,
+      "max": 1.2,
+      "target": 1.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 60,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Early veg/seedling. Mix FloraMicro first, then Gro, then Bloom."
+    },
+    {
+     "week": 2,
+     "phase": "Veg",
+     "nutrients": {
+      "FloraMicro": 1.0,
+      "FloraGro": 1.2,
+      "FloraBloom": 0.6,
+      "CALiMAGic": 1.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 55,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Mid veg growth acceleration."
+    },
+    {
+     "week": 3,
+     "phase": "Veg",
+     "nutrients": {
+      "FloraMicro": 1.3,
+      "FloraGro": 1.8,
+      "FloraBloom": 0.8,
+      "CALiMAGic": 1.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.2,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.4,
+      "max": 1.8,
+      "target": 1.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Late veg peak strength before photoperiod flip."
+    },
+    {
+     "week": 4,
+     "phase": "Flower",
+     "nutrients": {
+      "FloraMicro": 1.3,
+      "FloraGro": 1.3,
+      "FloraBloom": 1.3,
+      "CALiMAGic": 1.0
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.2,
+      "target": 6.0
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.0,
+      "target": 1.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Early bloom stretch (Week 1 Flower). 1:1:1 base ratio."
+    },
+    {
+     "week": 5,
+     "phase": "Flower",
+     "nutrients": {
+      "FloraMicro": 1.3,
+      "FloraGro": 1.0,
+      "FloraBloom": 1.5,
+      "CALiMAGic": 1.0
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.2,
+      "target": 6.0
+     },
+     "EC": {
+      "min": 1.7,
+      "max": 2.1,
+      "target": 1.9
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Pre-flower formation (Week 2 Flower). Step down FloraGro."
+    },
+    {
+     "week": 6,
+     "phase": "Flower",
+     "nutrients": {
+      "FloraMicro": 1.3,
+      "FloraGro": 0.8,
+      "FloraBloom": 1.8,
+      "CALiMAGic": 1.0
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.2,
+      "target": 6.0
+     },
+     "EC": {
+      "min": 1.8,
+      "max": 2.2,
+      "target": 2.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Mid bloom (Week 3 Flower). Bud site establishing."
+    },
+    {
+     "week": 7,
+     "phase": "Flower",
+     "nutrients": {
+      "FloraMicro": 1.3,
+      "FloraGro": 0.5,
+      "FloraBloom": 2.2,
+      "CALiMAGic": 0.5
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.3,
+      "target": 6.0
+     },
+     "EC": {
+      "min": 1.8,
+      "max": 2.2,
+      "target": 2.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Peak bloom bulking (Week 4 Flower)."
+    },
+    {
+     "week": 8,
+     "phase": "Flower",
+     "nutrients": {
+      "FloraMicro": 1.0,
+      "FloraGro": 0.0,
+      "FloraBloom": 2.5,
+      "CALiMAGic": 0.5
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.3,
+      "target": 6.0
+     },
+     "EC": {
+      "min": 1.7,
+      "max": 2.1,
+      "target": 1.9
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Late bloom swell (Week 5 Flower). FloraGro completely dropped."
+    },
+    {
+     "week": 9,
+     "phase": "Flower",
+     "nutrients": {
+      "FloraMicro": 0.8,
+      "FloraGro": 0.0,
+      "FloraBloom": 2.0,
+      "CALiMAGic": 0.0
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.3,
+      "target": 6.0
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Ripening phase (Week 6 Flower). Tapering base feed."
+    },
+    {
+     "week": 10,
+     "phase": "Flush",
+     "nutrients": {
+      "FloraMicro": 0.0,
+      "FloraGro": 0.0,
+      "FloraBloom": 0.0,
+      "CALiMAGic": 0.0
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.3,
+      "target": 6.0
+     },
+     "EC": {
+      "min": 0.2,
+      "max": 0.6,
+      "target": 0.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Final flush with plain pH-adjusted water."
+    }
+   ]
+  },
+  {
+   "profileId": "ghe-floraseries-soil",
+   "displayName": "General Hydroponics FloraSeries (Soil)",
+   "substrate": "soil",
+   "weekEntries": [
+    {
+     "week": 1,
+     "phase": "Veg",
+     "nutrients": {
+      "FloraMicro": 0.25,
+      "FloraGro": 0.25,
+      "FloraBloom": 0.25
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 0.6,
+      "max": 1.0,
+      "target": 0.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 60,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Light feed for soil seedlings."
+    },
+    {
+     "week": 2,
+     "phase": "Veg",
+     "nutrients": {
+      "FloraMicro": 0.5,
+      "FloraGro": 0.6,
+      "FloraBloom": 0.3
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 0.8,
+      "max": 1.2,
+      "target": 1.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 55,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Mid veg stage."
+    },
+    {
+     "week": 3,
+     "phase": "Veg",
+     "nutrients": {
+      "FloraMicro": 0.7,
+      "FloraGro": 1.0,
+      "FloraBloom": 0.4
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 60
+      },
+      "lightHours": 18
+     },
+     "notes": "Full veg stage strength."
+    },
+    {
+     "week": 4,
+     "phase": "Flower",
+     "nutrients": {
+      "FloraMicro": 0.7,
+      "FloraGro": 0.7,
+      "FloraBloom": 0.7
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.5,
+      "target": 1.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Transition to bloom."
+    },
+    {
+     "week": 5,
+     "phase": "Flower",
+     "nutrients": {
+      "FloraMicro": 0.7,
+      "FloraGro": 0.5,
+      "FloraBloom": 0.8
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Early flower development."
+    },
+    {
+     "week": 6,
+     "phase": "Flower",
+     "nutrients": {
+      "FloraMicro": 0.7,
+      "FloraGro": 0.4,
+      "FloraBloom": 1.0
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Mid flower."
+    },
+    {
+     "week": 7,
+     "phase": "Flower",
+     "nutrients": {
+      "FloraMicro": 0.7,
+      "FloraGro": 0.2,
+      "FloraBloom": 1.2
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.3,
+      "max": 1.7,
+      "target": 1.5
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Peak flower."
+    },
+    {
+     "week": 8,
+     "phase": "Flower",
+     "nutrients": {
+      "FloraMicro": 0.5,
+      "FloraGro": 0.0,
+      "FloraBloom": 1.3
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Late flower."
+    },
+    {
+     "week": 9,
+     "phase": "Flower",
+     "nutrients": {
+      "FloraMicro": 0.3,
+      "FloraGro": 0.0,
+      "FloraBloom": 0.8
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 0.8,
+      "max": 1.1,
+      "target": 0.9
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Ripening taper."
+    },
+    {
+     "week": 10,
+     "phase": "Flush",
+     "nutrients": {
+      "FloraMicro": 0.0,
+      "FloraGro": 0.0,
+      "FloraBloom": 0.0
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 0.2,
+      "max": 0.5,
+      "target": 0.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Pure water flush."
+    }
+   ]
+  },
+  {
+   "profileId": "advanced-nutrients-sensi-coco",
+   "displayName": "Advanced Nutrients (pH Perfect Sensi Coco)",
+   "substrate": "coco",
+   "weekEntries": [
+    {
+     "week": 1,
+     "phase": "Veg",
+     "nutrients": {
+      "pH Perfect Sensi Coco Grow A": 1.0,
+      "pH Perfect Sensi Coco Grow B": 1.0,
+      "Voodoo Juice": 2.0,
+      "B-52": 0.0,
+      "Big Bud Coco": 0.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.3,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 60,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Early veg."
+    },
+    {
+     "week": 2,
+     "phase": "Veg",
+     "nutrients": {
+      "pH Perfect Sensi Coco Grow A": 2.0,
+      "pH Perfect Sensi Coco Grow B": 2.0,
+      "Voodoo Juice": 2.0,
+      "B-52": 2.0,
+      "Big Bud Coco": 0.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.3,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.4,
+      "max": 1.8,
+      "target": 1.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 55,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Mid veg."
+    },
+    {
+     "week": 3,
+     "phase": "Veg",
+     "nutrients": {
+      "pH Perfect Sensi Coco Grow A": 4.0,
+      "pH Perfect Sensi Coco Grow B": 4.0,
+      "Voodoo Juice": 0.0,
+      "B-52": 2.0,
+      "Big Bud Coco": 0.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.3,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.0,
+      "target": 1.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 60
+      },
+      "lightHours": 18
+     },
+     "notes": "Late veg peak."
+    },
+    {
+     "week": 4,
+     "phase": "Flower",
+     "nutrients": {
+      "pH Perfect Sensi Coco Bloom A": 4.0,
+      "pH Perfect Sensi Coco Bloom B": 4.0,
+      "Voodoo Juice": 2.0,
+      "B-52": 0.0,
+      "Big Bud Coco": 0.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.3,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.0,
+      "target": 1.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Transition bloom. Voodoo Juice re-applied."
+    },
+    {
+     "week": 5,
+     "phase": "Flower",
+     "nutrients": {
+      "pH Perfect Sensi Coco Bloom A": 4.0,
+      "pH Perfect Sensi Coco Bloom B": 4.0,
+      "Voodoo Juice": 2.0,
+      "B-52": 2.0,
+      "Big Bud Coco": 0.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.3,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.7,
+      "max": 2.1,
+      "target": 1.9
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Early flower stretch."
+    },
+    {
+     "week": 6,
+     "phase": "Flower",
+     "nutrients": {
+      "pH Perfect Sensi Coco Bloom A": 4.0,
+      "pH Perfect Sensi Coco Bloom B": 4.0,
+      "Voodoo Juice": 0.0,
+      "B-52": 2.0,
+      "Big Bud Coco": 2.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.3,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.8,
+      "max": 2.2,
+      "target": 2.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Mid bloom. Introduce Big Bud Coco."
+    },
+    {
+     "week": 7,
+     "phase": "Flower",
+     "nutrients": {
+      "pH Perfect Sensi Coco Bloom A": 4.0,
+      "pH Perfect Sensi Coco Bloom B": 4.0,
+      "Voodoo Juice": 0.0,
+      "B-52": 2.0,
+      "Big Bud Coco": 2.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.3,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.8,
+      "max": 2.2,
+      "target": 2.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Peak flower expansion."
+    },
+    {
+     "week": 8,
+     "phase": "Flower",
+     "nutrients": {
+      "pH Perfect Sensi Coco Bloom A": 4.0,
+      "pH Perfect Sensi Coco Bloom B": 4.0,
+      "Voodoo Juice": 0.0,
+      "B-52": 2.0,
+      "Big Bud Coco": 0.0,
+      "Overdrive": 2.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.3,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.8,
+      "max": 2.2,
+      "target": 2.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Late bloom. Switch Big Bud to Overdrive."
+    },
+    {
+     "week": 9,
+     "phase": "Flower",
+     "nutrients": {
+      "pH Perfect Sensi Coco Bloom A": 2.0,
+      "pH Perfect Sensi Coco Bloom B": 2.0,
+      "Voodoo Juice": 0.0,
+      "B-52": 0.0,
+      "Big Bud Coco": 0.0,
+      "Overdrive": 2.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.3,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Ripening taper phase."
+    },
+    {
+     "week": 10,
+     "phase": "Flush",
+     "nutrients": {
+      "pH Perfect Sensi Coco Bloom A": 0.0,
+      "pH Perfect Sensi Coco Bloom B": 0.0,
+      "Voodoo Juice": 0.0,
+      "B-52": 0.0,
+      "Big Bud Coco": 0.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.3,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 0.2,
+      "max": 0.5,
+      "target": 0.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Flush phase."
+    }
+   ]
+  },
+  {
+   "profileId": "advanced-nutrients-sensi-soil",
+   "displayName": "Advanced Nutrients (pH Perfect Sensi Soil)",
+   "substrate": "soil",
+   "weekEntries": [
+    {
+     "week": 1,
+     "phase": "Veg",
+     "nutrients": {
+      "pH Perfect Sensi Grow A": 1.0,
+      "pH Perfect Sensi Grow B": 1.0,
+      "pH Perfect Sensi Bloom A": 0.0,
+      "pH Perfect Sensi Bloom B": 0.0,
+      "Voodoo Juice": 2.0,
+      "B-52": 0.0,
+      "Big Bud": 0.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 0.8,
+      "max": 1.2,
+      "target": 1.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 60,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Early veg dose."
+    },
+    {
+     "week": 2,
+     "phase": "Veg",
+     "nutrients": {
+      "pH Perfect Sensi Grow A": 2.0,
+      "pH Perfect Sensi Grow B": 2.0,
+      "pH Perfect Sensi Bloom A": 0.0,
+      "pH Perfect Sensi Bloom B": 0.0,
+      "Voodoo Juice": 2.0,
+      "B-52": 2.0,
+      "Big Bud": 0.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 55,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Mid veg stage."
+    },
+    {
+     "week": 3,
+     "phase": "Veg",
+     "nutrients": {
+      "pH Perfect Sensi Grow A": 4.0,
+      "pH Perfect Sensi Grow B": 4.0,
+      "pH Perfect Sensi Bloom A": 0.0,
+      "pH Perfect Sensi Bloom B": 0.0,
+      "Voodoo Juice": 0.0,
+      "B-52": 2.0,
+      "Big Bud": 0.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.4,
+      "max": 1.8,
+      "target": 1.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 60
+      },
+      "lightHours": 18
+     },
+     "notes": "Late veg."
+    },
+    {
+     "week": 4,
+     "phase": "Flower",
+     "nutrients": {
+      "pH Perfect Sensi Grow A": 0.0,
+      "pH Perfect Sensi Grow B": 0.0,
+      "pH Perfect Sensi Bloom A": 2.0,
+      "pH Perfect Sensi Bloom B": 2.0,
+      "Voodoo Juice": 2.0,
+      "B-52": 0.0,
+      "Big Bud": 0.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.4,
+      "max": 1.8,
+      "target": 1.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Bloom transition."
+    },
+    {
+     "week": 5,
+     "phase": "Flower",
+     "nutrients": {
+      "pH Perfect Sensi Grow A": 0.0,
+      "pH Perfect Sensi Grow B": 0.0,
+      "pH Perfect Sensi Bloom A": 3.0,
+      "pH Perfect Sensi Bloom B": 3.0,
+      "Voodoo Juice": 2.0,
+      "B-52": 2.0,
+      "Big Bud": 0.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.5,
+      "max": 1.9,
+      "target": 1.7
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Early flower stretch."
+    },
+    {
+     "week": 6,
+     "phase": "Flower",
+     "nutrients": {
+      "pH Perfect Sensi Grow A": 0.0,
+      "pH Perfect Sensi Grow B": 0.0,
+      "pH Perfect Sensi Bloom A": 4.0,
+      "pH Perfect Sensi Bloom B": 4.0,
+      "Voodoo Juice": 0.0,
+      "B-52": 2.0,
+      "Big Bud": 2.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.0,
+      "target": 1.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Mid bloom. Add Big Bud."
+    },
+    {
+     "week": 7,
+     "phase": "Flower",
+     "nutrients": {
+      "pH Perfect Sensi Grow A": 0.0,
+      "pH Perfect Sensi Grow B": 0.0,
+      "pH Perfect Sensi Bloom A": 4.0,
+      "pH Perfect Sensi Bloom B": 4.0,
+      "Voodoo Juice": 0.0,
+      "B-52": 2.0,
+      "Big Bud": 2.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.0,
+      "target": 1.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Peak bloom."
+    },
+    {
+     "week": 8,
+     "phase": "Flower",
+     "nutrients": {
+      "pH Perfect Sensi Grow A": 0.0,
+      "pH Perfect Sensi Grow B": 0.0,
+      "pH Perfect Sensi Bloom A": 4.0,
+      "pH Perfect Sensi Bloom B": 4.0,
+      "Voodoo Juice": 0.0,
+      "B-52": 2.0,
+      "Big Bud": 0.0,
+      "Overdrive": 2.0
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.0,
+      "target": 1.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Late bloom. Switch to Overdrive."
+    },
+    {
+     "week": 9,
+     "phase": "Flower",
+     "nutrients": {
+      "pH Perfect Sensi Grow A": 0.0,
+      "pH Perfect Sensi Grow B": 0.0,
+      "pH Perfect Sensi Bloom A": 2.0,
+      "pH Perfect Sensi Bloom B": 2.0,
+      "Voodoo Juice": 0.0,
+      "B-52": 0.0,
+      "Big Bud": 0.0,
+      "Overdrive": 1.0
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Ripening taper."
+    },
+    {
+     "week": 10,
+     "phase": "Flush",
+     "nutrients": {
+      "pH Perfect Sensi Grow A": 0.0,
+      "pH Perfect Sensi Grow B": 0.0,
+      "pH Perfect Sensi Bloom A": 0.0,
+      "pH Perfect Sensi Bloom B": 0.0,
+      "Voodoo Juice": 0.0,
+      "B-52": 0.0,
+      "Big Bud": 0.0,
+      "Overdrive": 0.0
+     },
+     "pH": {
+      "min": 6.2,
+      "max": 6.8,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 0.2,
+      "max": 0.5,
+      "target": 0.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Soil flush."
+    }
+   ]
+  },
+  {
+   "profileId": "athena-blended-coco",
+   "displayName": "Athena Nutrients Blended (Coco)",
+   "substrate": "coco",
+   "weekEntries": [
+    {
+     "week": 1,
+     "phase": "Veg",
+     "nutrients": {
+      "Blended Grow A": 1.5,
+      "Blended Grow B": 1.5,
+      "Athena CaMg": 1.0,
+      "Athena Cleanse": 0.5,
+      "Blended Bloom A": 0.0,
+      "Blended Bloom B": 0.0,
+      "Athena PK": 0.0
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 5.9,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 24,
+       "max": 29
+      },
+      "tempNight": {
+       "min": 20,
+       "max": 24
+      },
+      "humidity": {
+       "min": 65,
+       "max": 75
+      },
+      "lightHours": 18
+     },
+     "notes": "Early veg."
+    },
+    {
+     "week": 2,
+     "phase": "Veg",
+     "nutrients": {
+      "Blended Grow A": 2.5,
+      "Blended Grow B": 2.5,
+      "Athena CaMg": 1.0,
+      "Athena Cleanse": 0.5,
+      "Blended Bloom A": 0.0,
+      "Blended Bloom B": 0.0,
+      "Athena PK": 0.0
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 5.9,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.8,
+      "max": 2.2,
+      "target": 2.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 24,
+       "max": 29
+      },
+      "tempNight": {
+       "min": 20,
+       "max": 24
+      },
+      "humidity": {
+       "min": 60,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Mid veg ramp-up."
+    },
+    {
+     "week": 3,
+     "phase": "Veg",
+     "nutrients": {
+      "Blended Grow A": 3.0,
+      "Blended Grow B": 3.0,
+      "Athena CaMg": 1.0,
+      "Athena Cleanse": 0.5,
+      "Blended Bloom A": 0.0,
+      "Blended Bloom B": 0.0,
+      "Athena PK": 0.0
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 5.9,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 2.0,
+      "max": 2.5,
+      "target": 2.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 24,
+       "max": 29
+      },
+      "tempNight": {
+       "min": 20,
+       "max": 24
+      },
+      "humidity": {
+       "min": 55,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Full veg feed."
+    },
+    {
+     "week": 4,
+     "phase": "Flower",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 3.0,
+      "Blended Bloom B": 3.0,
+      "Athena CaMg": 1.0,
+      "Athena Cleanse": 0.5,
+      "Athena PK": 0.0
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 2.2,
+      "max": 2.8,
+      "target": 2.5
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 60
+      },
+      "lightHours": 12
+     },
+     "notes": "Switch to Bloom A+B at photoperiod flip."
+    },
+    {
+     "week": 5,
+     "phase": "Flower",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 3.0,
+      "Blended Bloom B": 3.0,
+      "Athena CaMg": 1.0,
+      "Athena Cleanse": 0.5,
+      "Athena PK": 0.5
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 2.3,
+      "max": 2.9,
+      "target": 2.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 60
+      },
+      "lightHours": 12
+     },
+     "notes": "Early bloom stretch. Start Athena PK."
+    },
+    {
+     "week": 6,
+     "phase": "Flower",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 3.0,
+      "Blended Bloom B": 3.0,
+      "Athena CaMg": 1.0,
+      "Athena Cleanse": 0.5,
+      "Athena PK": 1.0
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 2.4,
+      "max": 3.0,
+      "target": 2.7
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Mid bloom stacking."
+    },
+    {
+     "week": 7,
+     "phase": "Flower",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 3.0,
+      "Blended Bloom B": 3.0,
+      "Athena CaMg": 1.0,
+      "Athena Cleanse": 0.5,
+      "Athena PK": 1.5
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 2.5,
+      "max": 3.0,
+      "target": 2.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 27
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Peak bulking EC."
+    },
+    {
+     "week": 8,
+     "phase": "Flower",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 2.5,
+      "Blended Bloom B": 2.5,
+      "Athena CaMg": 0.5,
+      "Athena Cleanse": 0.5,
+      "Athena PK": 0.5
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.8,
+      "max": 2.2,
+      "target": 2.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Late bloom. Taper PK booster."
+    },
+    {
+     "week": 9,
+     "phase": "Flower",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 1.5,
+      "Blended Bloom B": 1.5,
+      "Athena CaMg": 0.0,
+      "Athena Cleanse": 0.5,
+      "Athena PK": 0.0
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Ripening step-down."
+    },
+    {
+     "week": 10,
+     "phase": "Flush",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 0.0,
+      "Blended Bloom B": 0.0,
+      "Athena CaMg": 0.0,
+      "Athena Cleanse": 1.0,
+      "Athena PK": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 5.8,
+      "target": 5.6
+     },
+     "EC": {
+      "min": 0.2,
+      "max": 0.6,
+      "target": 0.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Flush using Athena Cleanse."
+    }
+   ]
+  },
+  {
+   "profileId": "athena-blended-soil",
+   "displayName": "Athena Nutrients Blended (Soil/Peat)",
+   "substrate": "soil",
+   "weekEntries": [
+    {
+     "week": 1,
+     "phase": "Veg",
+     "nutrients": {
+      "Blended Grow A": 1.0,
+      "Blended Grow B": 1.0,
+      "Athena CaMg": 0.5,
+      "Athena Cleanse": 0.5,
+      "Blended Bloom A": 0.0,
+      "Blended Bloom B": 0.0,
+      "Athena PK": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.4,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 0.8,
+      "max": 1.2,
+      "target": 1.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 60,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Early veg dose for soil."
+    },
+    {
+     "week": 2,
+     "phase": "Veg",
+     "nutrients": {
+      "Blended Grow A": 1.8,
+      "Blended Grow B": 1.8,
+      "Athena CaMg": 0.5,
+      "Athena Cleanse": 0.5,
+      "Blended Bloom A": 0.0,
+      "Blended Bloom B": 0.0,
+      "Athena PK": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.4,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 55,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Mid veg stage."
+    },
+    {
+     "week": 3,
+     "phase": "Veg",
+     "nutrients": {
+      "Blended Grow A": 2.2,
+      "Blended Grow B": 2.2,
+      "Athena CaMg": 0.5,
+      "Athena Cleanse": 0.5,
+      "Blended Bloom A": 0.0,
+      "Blended Bloom B": 0.0,
+      "Athena PK": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.4,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.4,
+      "max": 1.8,
+      "target": 1.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 60
+      },
+      "lightHours": 18
+     },
+     "notes": "Late veg phase."
+    },
+    {
+     "week": 4,
+     "phase": "Flower",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 2.2,
+      "Blended Bloom B": 2.2,
+      "Athena CaMg": 0.5,
+      "Athena Cleanse": 0.5,
+      "Athena PK": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.3
+     },
+     "EC": {
+      "min": 1.5,
+      "max": 1.9,
+      "target": 1.7
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Transition to Bloom."
+    },
+    {
+     "week": 5,
+     "phase": "Flower",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 2.2,
+      "Blended Bloom B": 2.2,
+      "Athena CaMg": 0.5,
+      "Athena Cleanse": 0.5,
+      "Athena PK": 0.4
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.3
+     },
+     "EC": {
+      "min": 1.5,
+      "max": 1.9,
+      "target": 1.7
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Early bloom stretch."
+    },
+    {
+     "week": 6,
+     "phase": "Flower",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 2.2,
+      "Blended Bloom B": 2.2,
+      "Athena CaMg": 0.5,
+      "Athena Cleanse": 0.5,
+      "Athena PK": 0.8
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.3
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.0,
+      "target": 1.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Mid-flower boost."
+    },
+    {
+     "week": 7,
+     "phase": "Flower",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 2.2,
+      "Blended Bloom B": 2.2,
+      "Athena CaMg": 0.5,
+      "Athena Cleanse": 0.5,
+      "Athena PK": 1.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.3
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.0,
+      "target": 1.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Flower density focus."
+    },
+    {
+     "week": 8,
+     "phase": "Flower",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 1.8,
+      "Blended Bloom B": 1.8,
+      "Athena CaMg": 0.2,
+      "Athena Cleanse": 0.5,
+      "Athena PK": 0.4
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.3
+     },
+     "EC": {
+      "min": 1.4,
+      "max": 1.7,
+      "target": 1.5
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Late bloom taper."
+    },
+    {
+     "week": 9,
+     "phase": "Flower",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 1.0,
+      "Blended Bloom B": 1.0,
+      "Athena CaMg": 0.0,
+      "Athena Cleanse": 0.5,
+      "Athena PK": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.3
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.3,
+      "target": 1.1
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Ripening step-down."
+    },
+    {
+     "week": 10,
+     "phase": "Flush",
+     "nutrients": {
+      "Blended Grow A": 0.0,
+      "Blended Grow B": 0.0,
+      "Blended Bloom A": 0.0,
+      "Blended Bloom B": 0.0,
+      "Athena CaMg": 0.0,
+      "Athena Cleanse": 0.8,
+      "Athena PK": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 0.2,
+      "max": 0.5,
+      "target": 0.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Flush with Cleanse solution."
+    }
+   ]
+  },
+  {
+   "profileId": "plagron-coco",
+   "displayName": "Plagron 100% COCO",
+   "substrate": "coco",
+   "weekEntries": [
+    {
+     "week": 1,
+     "phase": "Veg",
+     "nutrients": {
+      "Cocos A": 1.5,
+      "Cocos B": 1.5,
+      "Power Roots": 1.0,
+      "Green Sensation": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 60,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Early veg. Always mix equal amounts of Cocos A and Cocos B."
+    },
+    {
+     "week": 2,
+     "phase": "Veg",
+     "nutrients": {
+      "Cocos A": 2.5,
+      "Cocos B": 2.5,
+      "Power Roots": 1.0,
+      "Green Sensation": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.4,
+      "max": 1.8,
+      "target": 1.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 55,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Full vegetative stage."
+    },
+    {
+     "week": 3,
+     "phase": "Veg",
+     "nutrients": {
+      "Cocos A": 3.0,
+      "Cocos B": 3.0,
+      "Power Roots": 1.0,
+      "Green Sensation": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.0,
+      "target": 1.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 60
+      },
+      "lightHours": 18
+     },
+     "notes": "Late veg peak."
+    },
+    {
+     "week": 4,
+     "phase": "Flower",
+     "nutrients": {
+      "Cocos A": 3.0,
+      "Cocos B": 3.0,
+      "Power Roots": 1.0,
+      "Green Sensation": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.2,
+      "target": 5.9
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.0,
+      "target": 1.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Transition bloom."
+    },
+    {
+     "week": 5,
+     "phase": "Flower",
+     "nutrients": {
+      "Cocos A": 3.0,
+      "Cocos B": 3.0,
+      "Power Roots": 0.5,
+      "Green Sensation": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.2,
+      "target": 5.9
+     },
+     "EC": {
+      "min": 1.7,
+      "max": 2.1,
+      "target": 1.9
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Early flower stretch."
+    },
+    {
+     "week": 6,
+     "phase": "Flower",
+     "nutrients": {
+      "Cocos A": 2.5,
+      "Cocos B": 2.5,
+      "Power Roots": 0.0,
+      "Green Sensation": 1.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.2,
+      "target": 5.9
+     },
+     "EC": {
+      "min": 1.8,
+      "max": 2.2,
+      "target": 2.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Introduce Green Sensation (1ml/L). Reduce base feed to maintain EC."
+    },
+    {
+     "week": 7,
+     "phase": "Flower",
+     "nutrients": {
+      "Cocos A": 2.5,
+      "Cocos B": 2.5,
+      "Power Roots": 0.0,
+      "Green Sensation": 1.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.2,
+      "target": 5.9
+     },
+     "EC": {
+      "min": 1.8,
+      "max": 2.2,
+      "target": 2.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Peak bloom bulking."
+    },
+    {
+     "week": 8,
+     "phase": "Flower",
+     "nutrients": {
+      "Cocos A": 2.0,
+      "Cocos B": 2.0,
+      "Power Roots": 0.0,
+      "Green Sensation": 1.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.2,
+      "target": 5.9
+     },
+     "EC": {
+      "min": 1.5,
+      "max": 1.9,
+      "target": 1.7
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Late bloom taper."
+    },
+    {
+     "week": 9,
+     "phase": "Flower",
+     "nutrients": {
+      "Cocos A": 1.5,
+      "Cocos B": 1.5,
+      "Power Roots": 0.0,
+      "Green Sensation": 0.5
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.2,
+      "target": 5.9
+     },
+     "EC": {
+      "min": 1.1,
+      "max": 1.5,
+      "target": 1.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Ripening taper."
+    },
+    {
+     "week": 10,
+     "phase": "Flush",
+     "nutrients": {
+      "Cocos A": 0.0,
+      "Cocos B": 0.0,
+      "Power Roots": 0.0,
+      "Green Sensation": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 0.2,
+      "max": 0.5,
+      "target": 0.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Flush phase."
+    }
+   ]
+  },
+  {
+   "profileId": "plagron-terra-soil",
+   "displayName": "Plagron 100% TERRA (Soil)",
+   "substrate": "soil",
+   "weekEntries": [
+    {
+     "week": 1,
+     "phase": "Veg",
+     "nutrients": {
+      "Terra Grow": 2.5,
+      "Terra Bloom": 0.0,
+      "Power Roots": 1.0,
+      "Green Sensation": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 60,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Early veg stage."
+    },
+    {
+     "week": 2,
+     "phase": "Veg",
+     "nutrients": {
+      "Terra Grow": 4.0,
+      "Terra Bloom": 0.0,
+      "Power Roots": 1.0,
+      "Green Sensation": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.3,
+      "max": 1.7,
+      "target": 1.5
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 55,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Full vegetative strength."
+    },
+    {
+     "week": 3,
+     "phase": "Veg",
+     "nutrients": {
+      "Terra Grow": 5.0,
+      "Terra Bloom": 0.0,
+      "Power Roots": 1.0,
+      "Green Sensation": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.5,
+      "max": 1.9,
+      "target": 1.7
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 60
+      },
+      "lightHours": 18
+     },
+     "notes": "Late veg peak."
+    },
+    {
+     "week": 4,
+     "phase": "Flower",
+     "nutrients": {
+      "Terra Grow": 0.0,
+      "Terra Bloom": 4.0,
+      "Power Roots": 1.0,
+      "Green Sensation": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.3
+     },
+     "EC": {
+      "min": 1.4,
+      "max": 1.8,
+      "target": 1.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Switch to Terra Bloom."
+    },
+    {
+     "week": 5,
+     "phase": "Flower",
+     "nutrients": {
+      "Terra Grow": 0.0,
+      "Terra Bloom": 4.0,
+      "Power Roots": 0.5,
+      "Green Sensation": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.3
+     },
+     "EC": {
+      "min": 1.5,
+      "max": 1.9,
+      "target": 1.7
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Early flower development."
+    },
+    {
+     "week": 6,
+     "phase": "Flower",
+     "nutrients": {
+      "Terra Grow": 0.0,
+      "Terra Bloom": 4.0,
+      "Power Roots": 0.0,
+      "Green Sensation": 1.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.3
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.0,
+      "target": 1.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Introduce Green Sensation."
+    },
+    {
+     "week": 7,
+     "phase": "Flower",
+     "nutrients": {
+      "Terra Grow": 0.0,
+      "Terra Bloom": 5.0,
+      "Power Roots": 0.0,
+      "Green Sensation": 1.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.3
+     },
+     "EC": {
+      "min": 1.8,
+      "max": 2.2,
+      "target": 2.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Peak flowering phase."
+    },
+    {
+     "week": 8,
+     "phase": "Flower",
+     "nutrients": {
+      "Terra Grow": 0.0,
+      "Terra Bloom": 4.0,
+      "Power Roots": 0.0,
+      "Green Sensation": 1.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.3
+     },
+     "EC": {
+      "min": 1.5,
+      "max": 1.8,
+      "target": 1.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Late flower stage."
+    },
+    {
+     "week": 9,
+     "phase": "Flower",
+     "nutrients": {
+      "Terra Grow": 0.0,
+      "Terra Bloom": 2.0,
+      "Power Roots": 0.0,
+      "Green Sensation": 0.5
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.3
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.3,
+      "target": 1.1
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Ripening step-down."
+    },
+    {
+     "week": 10,
+     "phase": "Flush",
+     "nutrients": {
+      "Terra Grow": 0.0,
+      "Terra Bloom": 0.0,
+      "Power Roots": 0.0,
+      "Green Sensation": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 0.2,
+      "max": 0.5,
+      "target": 0.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Plain water flush."
+    }
+   ]
+  },
+  {
+   "profileId": "biotabs-coco",
+   "displayName": "BioTabs Organic (Coco)",
+   "substrate": "coco",
+   "weekEntries": [
+    {
+     "week": 1,
+     "phase": "Veg",
+     "nutrients": {
+      "BioTabs Tablets": 1.0,
+      "Bactrex": 1.0,
+      "Orgatrex": 0.0,
+      "Cal-Mag": 1.0
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 60,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Mix 1 tab per 5L coco coir. Soak with Bactrex (1g/L) + CalMag."
+    },
+    {
+     "week": 2,
+     "phase": "Veg",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0,
+      "Cal-Mag": 1.0
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 55,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Water with plain tap water + CalMag."
+    },
+    {
+     "week": 3,
+     "phase": "Veg",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0,
+      "Cal-Mag": 1.0
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 60
+      },
+      "lightHours": 18
+     },
+     "notes": "Water with plain tap water + CalMag."
+    },
+    {
+     "week": 4,
+     "phase": "Flower",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0,
+      "Cal-Mag": 1.0
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.5,
+      "target": 1.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Flower flip stage."
+    },
+    {
+     "week": 5,
+     "phase": "Flower",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 1.0,
+      "Orgatrex": 20.0,
+      "Cal-Mag": 1.0
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.4,
+      "max": 1.8,
+      "target": 1.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Mid-flower boost: 20ml Orgatrex + 1g Bactrex."
+    },
+    {
+     "week": 6,
+     "phase": "Flower",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0,
+      "Cal-Mag": 0.5
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.5,
+      "target": 1.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Plain tap water + low CalMag."
+    },
+    {
+     "week": 7,
+     "phase": "Flower",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0,
+      "Cal-Mag": 0.5
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.5,
+      "target": 1.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Plain tap water + low CalMag."
+    },
+    {
+     "week": 8,
+     "phase": "Flower",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 1.0,
+      "Orgatrex": 10.0,
+      "Cal-Mag": 0.5
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.5,
+      "target": 1.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Late-flower light Orgatrex top-up."
+    },
+    {
+     "week": 9,
+     "phase": "Flower",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0,
+      "Cal-Mag": 0.0
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.3,
+      "target": 1.1
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Plain water."
+    },
+    {
+     "week": 10,
+     "phase": "Flush",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0,
+      "Cal-Mag": 0.0
+     },
+     "pH": {
+      "min": 5.8,
+      "max": 6.5,
+      "target": 6.2
+     },
+     "EC": {
+      "min": 0.4,
+      "max": 0.7,
+      "target": 0.5
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Flush stage."
+    }
+   ]
+  },
+  {
+   "profileId": "biotabs-soil",
+   "displayName": "BioTabs Organic (Soil)",
+   "substrate": "soil",
+   "weekEntries": [
+    {
+     "week": 1,
+     "phase": "Veg",
+     "nutrients": {
+      "BioTabs Tablets": 1.0,
+      "Bactrex": 1.0,
+      "Orgatrex": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 0.8,
+      "max": 1.2,
+      "target": 1.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 60,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Substrate prepped with 1 tablet per 5L. Initial soak with Bactrex (1g/L)."
+    },
+    {
+     "week": 2,
+     "phase": "Veg",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 55,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Plain tap water only."
+    },
+    {
+     "week": 3,
+     "phase": "Veg",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 60
+      },
+      "lightHours": 18
+     },
+     "notes": "Plain tap water only."
+    },
+    {
+     "week": 4,
+     "phase": "Flower",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Flip to 12/12 photoperiod. Water only."
+    },
+    {
+     "week": 5,
+     "phase": "Flower",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 1.0,
+      "Orgatrex": 20.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.4,
+      "max": 1.8,
+      "target": 1.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Mid-flower boost: 20ml Orgatrex + 1g Bactrex per plant in 500ml water."
+    },
+    {
+     "week": 6,
+     "phase": "Flower",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Plain tap water."
+    },
+    {
+     "week": 7,
+     "phase": "Flower",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Plain tap water."
+    },
+    {
+     "week": 8,
+     "phase": "Flower",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 1.0,
+      "Orgatrex": 10.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.5,
+      "target": 1.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Optional light late-flower Orgatrex boost if leaves show premature yellowing."
+    },
+    {
+     "week": 9,
+     "phase": "Flower",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Plain tap water."
+    },
+    {
+     "week": 10,
+     "phase": "Flush",
+     "nutrients": {
+      "BioTabs Tablets": 0.0,
+      "Bactrex": 0.0,
+      "Orgatrex": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 0.4,
+      "max": 0.8,
+      "target": 0.6
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Plain water until harvest."
+    }
+   ]
+  },
+  {
+   "profileId": "gh-powder-feeding-coco",
+   "displayName": "Green House Powder Feeding (Coco/Hydro)",
+   "substrate": "coco",
+   "weekEntries": [
+    {
+     "week": 1,
+     "phase": "Veg",
+     "nutrients": {
+      "Powder Feeding Grow": 0.3,
+      "Powder Feeding Short Flowering": 0.0,
+      "Powder Feeding Calcium": 0.5
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 0.8,
+      "max": 1.2,
+      "target": 1.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 60,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Early veg. Dosages in g/L."
+    },
+    {
+     "week": 2,
+     "phase": "Veg",
+     "nutrients": {
+      "Powder Feeding Grow": 0.5,
+      "Powder Feeding Short Flowering": 0.0,
+      "Powder Feeding Calcium": 0.5
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 55,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Mid veg."
+    },
+    {
+     "week": 3,
+     "phase": "Veg",
+     "nutrients": {
+      "Powder Feeding Grow": 0.8,
+      "Powder Feeding Short Flowering": 0.0,
+      "Powder Feeding Calcium": 0.5
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 1.5,
+      "max": 1.9,
+      "target": 1.7
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 60
+      },
+      "lightHours": 18
+     },
+     "notes": "Late veg peak."
+    },
+    {
+     "week": 4,
+     "phase": "Flower",
+     "nutrients": {
+      "Powder Feeding Grow": 0.0,
+      "Powder Feeding Short Flowering": 0.8,
+      "Powder Feeding Calcium": 0.5
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 6.2,
+      "target": 5.9
+     },
+     "EC": {
+      "min": 1.6,
+      "max": 2.0,
+      "target": 1.8
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Switch to Powder Short Flowering."
+    },
+    {
+     "week": 5,
+     "phase": "Flower",
+     "nutrients": {
+      "Powder Feeding Grow": 0.0,
+      "Powder Feeding Short Flowering": 0.9,
+      "Powder Feeding Calcium": 0.5
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 6.2,
+      "target": 5.9
+     },
+     "EC": {
+      "min": 1.7,
+      "max": 2.1,
+      "target": 1.9
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Early flower stretch."
+    },
+    {
+     "week": 6,
+     "phase": "Flower",
+     "nutrients": {
+      "Powder Feeding Grow": 0.0,
+      "Powder Feeding Short Flowering": 1.0,
+      "Powder Feeding Calcium": 0.5
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 6.2,
+      "target": 5.9
+     },
+     "EC": {
+      "min": 1.8,
+      "max": 2.2,
+      "target": 2.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Mid bloom."
+    },
+    {
+     "week": 7,
+     "phase": "Flower",
+     "nutrients": {
+      "Powder Feeding Grow": 0.0,
+      "Powder Feeding Short Flowering": 1.0,
+      "Powder Feeding Calcium": 0.5
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 6.2,
+      "target": 5.9
+     },
+     "EC": {
+      "min": 1.8,
+      "max": 2.2,
+      "target": 2.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Peak bloom."
+    },
+    {
+     "week": 8,
+     "phase": "Flower",
+     "nutrients": {
+      "Powder Feeding Grow": 0.0,
+      "Powder Feeding Short Flowering": 0.8,
+      "Powder Feeding Calcium": 0.3
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 6.2,
+      "target": 5.9
+     },
+     "EC": {
+      "min": 1.5,
+      "max": 1.9,
+      "target": 1.7
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Late bloom taper."
+    },
+    {
+     "week": 9,
+     "phase": "Flower",
+     "nutrients": {
+      "Powder Feeding Grow": 0.0,
+      "Powder Feeding Short Flowering": 0.5,
+      "Powder Feeding Calcium": 0.2
+     },
+     "pH": {
+      "min": 5.6,
+      "max": 6.2,
+      "target": 5.9
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Ripening taper."
+    },
+    {
+     "week": 10,
+     "phase": "Flush",
+     "nutrients": {
+      "Powder Feeding Grow": 0.0,
+      "Powder Feeding Short Flowering": 0.0,
+      "Powder Feeding Calcium": 0.0
+     },
+     "pH": {
+      "min": 5.5,
+      "max": 6.0,
+      "target": 5.8
+     },
+     "EC": {
+      "min": 0.2,
+      "max": 0.5,
+      "target": 0.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Flush with pure water."
+    }
+   ]
+  },
+  {
+   "profileId": "gh-powder-feeding-bio-soil",
+   "displayName": "Green House Powder Feeding (Bio Soil)",
+   "substrate": "soil",
+   "weekEntries": [
+    {
+     "week": 1,
+     "phase": "Veg",
+     "nutrients": {
+      "BioGrow": 3.0,
+      "BioBloom": 0.0,
+      "Bio Enhancer": 0.5
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 0.8,
+      "max": 1.2,
+      "target": 1.0
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 60,
+       "max": 70
+      },
+      "lightHours": 18
+     },
+     "notes": "Mix 3g BioGrow per Liter substrate into soil. Water with Enhancer (0.5g/L)."
+    },
+    {
+     "week": 2,
+     "phase": "Veg",
+     "nutrients": {
+      "BioGrow": 0.0,
+      "BioBloom": 0.0,
+      "Bio Enhancer": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 55,
+       "max": 65
+      },
+      "lightHours": 18
+     },
+     "notes": "Plain water."
+    },
+    {
+     "week": 3,
+     "phase": "Veg",
+     "nutrients": {
+      "BioGrow": 0.0,
+      "BioBloom": 0.0,
+      "Bio Enhancer": 0.5
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 22,
+       "max": 28
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 50,
+       "max": 60
+      },
+      "lightHours": 18
+     },
+     "notes": "Water with Enhancer solution."
+    },
+    {
+     "week": 4,
+     "phase": "Flower",
+     "nutrients": {
+      "BioGrow": 0.0,
+      "BioBloom": 3.0,
+      "Bio Enhancer": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.5,
+      "target": 1.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 55
+      },
+      "lightHours": 12
+     },
+     "notes": "Top-dress 3g BioBloom per Liter substrate into topsoil."
+    },
+    {
+     "week": 5,
+     "phase": "Flower",
+     "nutrients": {
+      "BioGrow": 0.0,
+      "BioBloom": 0.0,
+      "Bio Enhancer": 0.5
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.6,
+      "target": 1.4
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 26
+      },
+      "tempNight": {
+       "min": 18,
+       "max": 22
+      },
+      "humidity": {
+       "min": 45,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Water with Enhancer solution."
+    },
+    {
+     "week": 6,
+     "phase": "Flower",
+     "nutrients": {
+      "BioGrow": 0.0,
+      "BioBloom": 0.0,
+      "Bio Enhancer": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.5,
+      "target": 1.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Plain water."
+    },
+    {
+     "week": 7,
+     "phase": "Flower",
+     "nutrients": {
+      "BioGrow": 0.0,
+      "BioBloom": 0.0,
+      "Bio Enhancer": 0.5
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.2,
+      "max": 1.5,
+      "target": 1.3
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 17,
+       "max": 21
+      },
+      "humidity": {
+       "min": 40,
+       "max": 50
+      },
+      "lightHours": 12
+     },
+     "notes": "Water with Enhancer solution."
+    },
+    {
+     "week": 8,
+     "phase": "Flower",
+     "nutrients": {
+      "BioGrow": 0.0,
+      "BioBloom": 1.0,
+      "Bio Enhancer": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.1,
+      "max": 1.4,
+      "target": 1.2
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Light top-dress booster (1g/L) for long flowering cultivars if needed."
+    },
+    {
+     "week": 9,
+     "phase": "Flower",
+     "nutrients": {
+      "BioGrow": 0.0,
+      "BioBloom": 0.0,
+      "Bio Enhancer": 0.5
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 1.0,
+      "max": 1.3,
+      "target": 1.1
+     },
+     "environment": {
+      "tempDay": {
+       "min": 20,
+       "max": 25
+      },
+      "tempNight": {
+       "min": 16,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Final Enhancer application."
+    },
+    {
+     "week": 10,
+     "phase": "Flush",
+     "nutrients": {
+      "BioGrow": 0.0,
+      "BioBloom": 0.0,
+      "Bio Enhancer": 0.0
+     },
+     "pH": {
+      "min": 6.0,
+      "max": 7.0,
+      "target": 6.5
+     },
+     "EC": {
+      "min": 0.4,
+      "max": 0.7,
+      "target": 0.5
+     },
+     "environment": {
+      "tempDay": {
+       "min": 18,
+       "max": 24
+      },
+      "tempNight": {
+       "min": 15,
+       "max": 20
+      },
+      "humidity": {
+       "min": 35,
+       "max": 45
+      },
+      "lightHours": 12
+     },
+     "notes": "Plain water until harvest."
+    }
+   ]
   }
  ]
 }

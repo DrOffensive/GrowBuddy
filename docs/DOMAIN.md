@@ -190,11 +190,12 @@ continuously.
 
 ## Feeding schedules and nutrient lines
 
-A **nutrient line** is a brand (BioBizz, CANNA) with products, each with a
-unit (e.g. `ml/L`). A **feeding schedule** gives per-week nutrient doses
-(product name → ml/L), pH/EC min/max/target, day/night temperature, humidity
+A **nutrient line** is a brand (BioBizz, CANNA, General Hydroponics, …) with
+products, each with a unit (e.g. `ml/L`, `g/L`, `tabs/plant`). A **feeding
+schedule** gives per-week nutrient doses (product name → amount in that
+product's unit, `ml/L` for names that aren't a product), pH/EC min/max/target, day/night temperature, humidity
 and light hours, with phases Veg/Flower/Flush. **Built-in** schedules ship in
-the seed files (BioBizz coco, 10 weeks, and more brands over time) and are
+the seed files (13 schedules from 7 brands, coco and soil) and are
 read-only. **Custom** schedules are made in the app, from scratch or by
 duplicating another one. The app uses the chosen schedule to pre-fill a
 Feeding entry and to show "this week's targets".
