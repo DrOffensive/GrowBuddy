@@ -63,6 +63,16 @@ and enter the server URL and token that the installer prints.
 - [backup/README.md](backup/README.md): backup and restore
 - [CHANGELOG.md](CHANGELOG.md): what changed in each version
 
+## Disclaimer
+
+GrowBuddy is an independent hobby project. It is not affiliated with, endorsed
+by or sponsored by any of the nutrient brands, breeders, seed shops or other
+companies named in the app or in this repository. Product and brand names are
+trademarks of their owners and are used only to identify their products.
+
+The built-in feeding schedules are suggestions only. Always check the nutrient
+maker's official feeding chart and the health of your plants first.
+
 ## Licence
 
 GrowBuddy is free software under the [GNU General Public License v3.0 or

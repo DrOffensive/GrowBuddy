@@ -125,7 +125,7 @@ def test_nutrient_lines(client: TestClient, auth: dict[str, str]) -> None:
 
 def test_feeding_schedules(client: TestClient, auth: dict[str, str]) -> None:
     summaries = client.get(f"{API}/feeding-schedules", headers=auth).json()
-    assert len(summaries) == 13
+    assert len(summaries) == 15
     (summary,) = [s for s in summaries if s["profile_key"] == "biobizz"]
     assert summary["weeks"] == 10
     schedule = client.get(f"{API}/feeding-schedules/{summary['id']}", headers=auth).json()

@@ -154,6 +154,7 @@ fun ScheduleScreen(onBack: () -> Unit, onEdit: (editId: Long?, copyFromId: Long?
                                 ).joinToString(" · "),
                                 color = Palette.TextSecondary,
                             )
+                            Text(stringResource(R.string.sched_disclaimer), style = MaterialTheme.typography.bodyMedium, color = Palette.Warning)
                             Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                                 OutlinedButton(onClick = { onEdit(null, schedule.id) }) { Text(stringResource(R.string.common_duplicate)) }
                                 if (schedule.custom) {

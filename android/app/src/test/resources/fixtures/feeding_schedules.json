@@ -56,6 +56,22 @@
   "weeks": 10
  },
  {
+  "id": 14,
+  "profile_key": "canna-coco",
+  "display_name": "CANNA COCO (Coco)",
+  "substrate": "coco",
+  "custom": false,
+  "weeks": 10
+ },
+ {
+  "id": 15,
+  "profile_key": "canna-terra",
+  "display_name": "CANNA TERRA (Soil)",
+  "substrate": "soil",
+  "custom": false,
+  "weeks": 10
+ },
+ {
   "id": 2,
   "profile_key": "ghe-floraseries-coco",
   "display_name": "General Hydroponics FloraSeries (Coco/Hydro)",

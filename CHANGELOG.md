@@ -5,6 +5,27 @@ follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and versions
 follow [Semantic Versioning](https://semver.org/). One version number covers the
 server, the Android app and the backup together.
 
+## 2.5.1 - 2026-10-23
+
+CANNA schedules and disclaimers.
+
+### Server
+
+- **Version:** reports 2.5.1, matching the app.
+- **Feeding schedules:** CANNA COCO and CANNA TERRA built-in schedules
+  (15 in all). Coco A & B amounts are per part.
+
+### Android app
+
+- **Version:** 2.5.1 (build 251).
+- **Feeding schedule:** a note that the schedules are suggestions only, and to
+  check the nutrient maker's official chart and the plants first.
+
+### Docs
+
+- **README:** a disclaimer that GrowBuddy isn't affiliated with any of the
+  brands it names.
+
 ## 2.5.0 - 2026-10-23
 
 More nutrient brands and built-in feeding schedules.

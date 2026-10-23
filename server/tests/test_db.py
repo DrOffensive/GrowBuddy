@@ -28,7 +28,7 @@ async def test_seed_populates_reference_tables(db: Database) -> None:
     assert set(seeded) == {"strains", "nutrient_lines", "feeding_schedules", "phase_ranges"}
     assert await db.fetchval("SELECT COUNT(*) FROM strains") > 400
     assert await db.fetchval("SELECT COUNT(*) FROM nutrient_products") == 90
-    assert await db.fetchval("SELECT COUNT(*) FROM feeding_schedule_weeks") == 130
+    assert await db.fetchval("SELECT COUNT(*) FROM feeding_schedule_weeks") == 150
     assert await db.fetchval("SELECT COUNT(*) FROM phase_ranges") == 11
     week1 = await db.fetchone("SELECT * FROM feeding_schedule_weeks WHERE week = 1")
     assert week1 is not None

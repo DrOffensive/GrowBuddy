@@ -196,6 +196,7 @@
     <string name="sched_custom">Custom</string>
     <string name="sched_builtin">Built-in</string>
     <string name="sched_substrate">substrate: %1$s</string>
+    <string name="sched_disclaimer">These schedules are suggestions only! Always check the nutrient maker\'s official feeding chart and the health of your plants first.</string>
     <string name="sched_week">Week %1$d</string>
     <string name="sched_now">Now: %1$s</string>
     <string name="sched_day">Day %1$s</string>
